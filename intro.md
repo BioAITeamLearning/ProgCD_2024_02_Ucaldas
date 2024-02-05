@@ -92,7 +92,7 @@ Facultad de ingeniería, Ingeniería de Sistemas
 
 ## Objetivos del curso:
 
-Proporcionar los conceptos y conocimientos necesarios para resolver problemas de programación distribuida y paralela; se concentrará la base de programación algorítmica, y los problemas de ingeniería asociados con el desarrollo de aplicaciones paralelas, distribuidas y concurrentes.
+El curso se propone enseñar los fundamentos y técnicas avanzadas de programación concurrente y distribuida, enfocándose en el diseño, implementación y optimización de sistemas software que operen eficientemente en entornos paralelos y distribuidos, preparando a los estudiantes para resolver desafíos reales en computación de alto rendimiento.
 
 ---
 
@@ -229,7 +229,7 @@ Inteligencia artificial (IA)
 ---
 
 ## Bibliografía
-Estas son algunas de las referencias usadas para este curso, vuelve pronto para encontrar más contenido.
+Estas son algunas de las referencias usadas para este curso.
 
 ::::{card-carousel} 2
 
