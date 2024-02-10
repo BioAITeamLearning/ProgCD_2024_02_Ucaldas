@@ -31,7 +31,7 @@ Muchos problemas han sido solucionados con técnicas de **HPC** que eran imposib
 
 Sistemas simples con varios procesadores trabajando sobre el mismo problema
 
-<img src="https://www.tibco.com/sites/tibco/files/media_entity/2021-06/massively-parallel-processing-diagram.svg" />
+<img src="https://www.researchgate.net/publication/270881492/figure/fig1/AS:669030503428115@1536520710504/Programacion-Paralela-y-Distribuida.ppm" />
 
 #### Computación paralela Vs Computador paralelo
 
