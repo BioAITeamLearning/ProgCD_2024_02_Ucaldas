@@ -4,6 +4,7 @@
 title: Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas
 author: Reinel Tabares, Johan Piña, Brayan Arteaga
 logo: https://avatars.githubusercontent.com/u/142033488?s=200&v=4
+copyright: "2024"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -29,3 +30,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+sphinx:
+  config:
+    language: es
