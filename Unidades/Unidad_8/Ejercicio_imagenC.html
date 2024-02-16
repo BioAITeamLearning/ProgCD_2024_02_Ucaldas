@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../" >
+<html lang="es" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Ejemplo de carga de una imagen en C &#8212; Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas</title>
   
@@ -18,58 +19,54 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../_static/doctools.js?v=888ff710"></script>
-    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../../_static/sphinx-thebe.js?v=afe5de03"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidades/Unidad_8/Ejercicio_imagenC';</script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="es"/>
   </head>
   
   
@@ -77,15 +74,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
-
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -120,16 +109,11 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -144,11 +128,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../../intro.html">
-  
   
   
   
@@ -158,23 +140,12 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-light" alt="Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas - Home"/>
-    <script>document.write(`<img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-dark" alt="Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas - Home"/>`);</script>
+    <img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -327,7 +298,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/BioAITeamLearning/ProgCD_2024_01_G1_Ucaldas" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -344,7 +315,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://github.com/BioAITeamLearning/ProgCD_2024_01_G1_Ucaldas/issues/new?title=Issue%20on%20page%20%2FUnidades/Unidad_8/Ejercicio_imagenC.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -365,7 +336,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -374,7 +345,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="../../_sources/Unidades/Unidad_8/Ejercicio_imagenC.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -392,7 +363,7 @@ const thebe_selector_output = ".output, .cell_output"
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Imprimir en PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -412,7 +383,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modo de pantalla completa"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -424,22 +395,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
 `);
 </script>
@@ -462,7 +431,7 @@ document.write(`
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenido </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
@@ -492,17 +461,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section id="ejemplo-de-carga-de-una-imagen-en-c">
-<h1>Ejemplo de carga de una imagen en C<a class="headerlink" href="#ejemplo-de-carga-de-una-imagen-en-c" title="Link to this heading">#</a></h1>
+<h1>Ejemplo de carga de una imagen en C<a class="headerlink" href="#ejemplo-de-carga-de-una-imagen-en-c" title="Permalink to this heading">#</a></h1>
 <section id="instalemos-algunas-librerias-utiles">
-<h2>Instalemos algunas librerías útiles.<a class="headerlink" href="#instalemos-algunas-librerias-utiles" title="Link to this heading">#</a></h2>
+<h2>Instalemos algunas librerías útiles.<a class="headerlink" href="#instalemos-algunas-librerias-utiles" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
-<span class="err">!</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libpng</span><span class="o">-</span><span class="n">dev</span>
-<span class="err">!</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libjpeg</span><span class="o">-</span><span class="n">dev</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!sudo apt-get update
+!sudo apt-get install libpng-dev
+!sudo apt-get install libjpeg-dev
 </pre></div>
 </div>
 </div>
@@ -557,53 +526,53 @@ libjpeg-dev set to manually installed.
 </div>
 </section>
 <section id="ejemplo-de-como-se-deben-escribir-los-programas-en-c-para-cargar-imegenes">
-<h2>Ejemplo de como se deben escribir los programas en c para cargar imégenes<a class="headerlink" href="#ejemplo-de-como-se-deben-escribir-los-programas-en-c-para-cargar-imegenes" title="Link to this heading">#</a></h2>
+<h2>Ejemplo de como se deben escribir los programas en c para cargar imégenes<a class="headerlink" href="#ejemplo-de-como-se-deben-escribir-los-programas-en-c-para-cargar-imegenes" title="Permalink to this heading">#</a></h2>
 <p>Este código permite cargar cualquier tipo de imagen .PNG. Se le carga de manera dinámica la imagen en el momento de la ejecución por linea de comando.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">cargar_imagen</span><span class="o">.</span><span class="n">c</span>
-<span class="c1">#include &lt;png.h&gt;</span>
-<span class="c1">#include &lt;stdio.h&gt;</span>
-<span class="c1">#include &lt;stdlib.h&gt;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%writefile cargar_imagen.c
+#include &lt;png.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
 
-<span class="o">//</span> <span class="n">Función</span> <span class="n">para</span> <span class="n">leer</span> <span class="n">la</span> <span class="n">imagen</span> <span class="n">PNG</span> <span class="n">y</span> <span class="n">obtener</span> <span class="n">su</span> <span class="n">tamaño</span>
-<span class="n">void</span> <span class="n">read_png_file</span><span class="p">(</span><span class="n">char</span> <span class="o">*</span><span class="n">filename</span><span class="p">,</span> <span class="nb">int</span> <span class="o">*</span><span class="n">width</span><span class="p">,</span> <span class="nb">int</span> <span class="o">*</span><span class="n">height</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">FILE</span> <span class="o">*</span><span class="n">file</span> <span class="o">=</span> <span class="n">fopen</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">file</span><span class="p">)</span> <span class="n">abort</span><span class="p">();</span>
+// Función para leer la imagen PNG y obtener su tamaño
+void read_png_file(char *filename, int *width, int *height) {
+    FILE *file = fopen(filename, &quot;rb&quot;);
+    if(!file) abort();
 
-    <span class="n">png_structp</span> <span class="n">png</span> <span class="o">=</span> <span class="n">png_create_read_struct</span><span class="p">(</span><span class="n">PNG_LIBPNG_VER_STRING</span><span class="p">,</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">NULL</span><span class="p">,</span> <span class="n">NULL</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">png</span><span class="p">)</span> <span class="n">abort</span><span class="p">();</span>
+    png_structp png = png_create_read_struct(PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
+    if (!png) abort();
 
-    <span class="n">png_infop</span> <span class="n">info</span> <span class="o">=</span> <span class="n">png_create_info_struct</span><span class="p">(</span><span class="n">png</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="err">!</span><span class="n">info</span><span class="p">)</span> <span class="n">abort</span><span class="p">();</span>
+    png_infop info = png_create_info_struct(png);
+    if (!info) abort();
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">setjmp</span><span class="p">(</span><span class="n">png_jmpbuf</span><span class="p">(</span><span class="n">png</span><span class="p">)))</span> <span class="n">abort</span><span class="p">();</span>
+    if (setjmp(png_jmpbuf(png))) abort();
 
-    <span class="n">png_init_io</span><span class="p">(</span><span class="n">png</span><span class="p">,</span> <span class="n">file</span><span class="p">);</span>
+    png_init_io(png, file);
 
-    <span class="n">png_read_info</span><span class="p">(</span><span class="n">png</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+    png_read_info(png, info);
 
-    <span class="o">*</span><span class="n">width</span> <span class="o">=</span> <span class="n">png_get_image_width</span><span class="p">(</span><span class="n">png</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
-    <span class="o">*</span><span class="n">height</span> <span class="o">=</span> <span class="n">png_get_image_height</span><span class="p">(</span><span class="n">png</span><span class="p">,</span> <span class="n">info</span><span class="p">);</span>
+    *width = png_get_image_width(png, info);
+    *height = png_get_image_height(png, info);
 
-    <span class="o">//</span> <span class="n">Aquí</span> <span class="n">podrías</span> <span class="n">expandir</span> <span class="n">el</span> <span class="n">código</span> <span class="n">para</span> <span class="n">leer</span> <span class="n">los</span> <span class="n">datos</span> <span class="n">de</span> <span class="n">los</span> <span class="n">píxeles</span> <span class="n">si</span> <span class="n">lo</span> <span class="n">necesitas</span>
+    // Aquí podrías expandir el código para leer los datos de los píxeles si lo necesitas
 
-    <span class="n">fclose</span><span class="p">(</span><span class="n">file</span><span class="p">);</span>
-<span class="p">}</span>
+    fclose(file);
+}
 
-<span class="nb">int</span> <span class="n">main</span><span class="p">(</span><span class="nb">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span> <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">argc</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s2">&quot;Uso: </span><span class="si">%s</span><span class="s2"> &lt;ruta de la imagen&gt;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, &quot;Uso: %s &lt;ruta de la imagen&gt;\n&quot;, argv[0]);
+        return 1;
+    }
 
-    <span class="nb">int</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">;</span>
-    <span class="n">read_png_file</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">width</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">height</span><span class="p">);</span>
+    int width, height;
+    read_png_file(argv[1], &amp;width, &amp;height);
 
-    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Tamaño de la imagen: </span><span class="si">%d</span><span class="s2"> x </span><span class="si">%d</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">);</span>
+    printf(&quot;Tamaño de la imagen: %d x %d\n&quot;, width, height);
 
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+    return 0;
+}
 </pre></div>
 </div>
 </div>
@@ -614,17 +583,17 @@ libjpeg-dev set to manually installed.
 </div>
 </div>
 <section id="compilamos-el-archivo-en-c-con-las-respectivas-librerias">
-<h3>Compilamos el archivo en C con las respectivas librerías.<a class="headerlink" href="#compilamos-el-archivo-en-c-con-las-respectivas-librerias" title="Link to this heading">#</a></h3>
+<h3>Compilamos el archivo en C con las respectivas librerías.<a class="headerlink" href="#compilamos-el-archivo-en-c-con-las-respectivas-librerias" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">gcc</span> <span class="n">cargar_imagen</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">imagen</span> <span class="o">-</span><span class="n">lpng</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!gcc cargar_imagen.c -o imagen -lpng
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">ls</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!ls
 </pre></div>
 </div>
 </div>
@@ -636,12 +605,12 @@ libjpeg-dev set to manually installed.
 </div>
 </section>
 <section id="ejecutamos-el-archivo-que-se-genera-del-programa">
-<h3>Ejecutamos el archivo que se genera del programa<a class="headerlink" href="#ejecutamos-el-archivo-que-se-genera-del-programa" title="Link to this heading">#</a></h3>
+<h3>Ejecutamos el archivo que se genera del programa<a class="headerlink" href="#ejecutamos-el-archivo-que-se-genera-del-programa" title="Permalink to this heading">#</a></h3>
 <p>y le pasamos como argumento la ruta de la imágen</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="n">imagen</span><span class="o">.</span><span class="n">png</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w7</span><span class="o">.</span><span class="n">pngwing</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pngs</span><span class="o">/</span><span class="mi">36</span><span class="o">/</span><span class="mi">440</span><span class="o">/</span><span class="n">png</span><span class="o">-</span><span class="n">transparent</span><span class="o">-</span><span class="n">homer</span><span class="o">-</span><span class="n">simpson</span><span class="o">-</span><span class="n">computer</span><span class="o">-</span><span class="n">icons</span><span class="o">-</span><span class="n">technology</span><span class="o">-</span><span class="n">homero</span><span class="o">-</span><span class="n">miscellaneous</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">hand</span><span class="o">.</span><span class="n">png</span>
-<span class="err">!</span><span class="n">wget</span> <span class="o">-</span><span class="n">O</span> <span class="n">imagen</span><span class="o">.</span><span class="n">jpeg</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">w7</span><span class="o">.</span><span class="n">pngwing</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pngs</span><span class="o">/</span><span class="mi">36</span><span class="o">/</span><span class="mi">440</span><span class="o">/</span><span class="n">png</span><span class="o">-</span><span class="n">transparent</span><span class="o">-</span><span class="n">homer</span><span class="o">-</span><span class="n">simpson</span><span class="o">-</span><span class="n">computer</span><span class="o">-</span><span class="n">icons</span><span class="o">-</span><span class="n">technology</span><span class="o">-</span><span class="n">homero</span><span class="o">-</span><span class="n">miscellaneous</span><span class="o">-</span><span class="n">text</span><span class="o">-</span><span class="n">hand</span><span class="o">.</span><span class="n">png</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!wget -O imagen.png https://w7.pngwing.com/pngs/36/440/png-transparent-homer-simpson-computer-icons-technology-homero-miscellaneous-text-hand.png
+!wget -O imagen.jpeg https://w7.pngwing.com/pngs/36/440/png-transparent-homer-simpson-computer-icons-technology-homero-miscellaneous-text-hand.png
 </pre></div>
 </div>
 </div>
@@ -675,7 +644,7 @@ imagen.jpeg         100%[===================&gt;]  32.49K  --.-KB/s    in 0.01s
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="o">./</span><span class="n">imagen</span> <span class="s2">&quot;/content/imagen.png&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!./imagen &quot;/content/imagen.png&quot;
 </pre></div>
 </div>
 </div>
@@ -688,74 +657,74 @@ imagen.jpeg         100%[===================&gt;]  32.49K  --.-KB/s    in 0.01s
 </section>
 </section>
 <section id="estrategia-paralela-de-filtrado">
-<h2>Estrategia paralela de filtrado.<a class="headerlink" href="#estrategia-paralela-de-filtrado" title="Link to this heading">#</a></h2>
+<h2>Estrategia paralela de filtrado.<a class="headerlink" href="#estrategia-paralela-de-filtrado" title="Permalink to this heading">#</a></h2>
 <p>Para este vamos a aplicarle el filtro de sobel (vertical y horizontal) a la imágen y usando una estrategia paralela.</p>
 <p>Primero veamos como es el código de manera secuencial para este caso</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">filtro_image</span><span class="o">.</span><span class="n">c</span>
-<span class="c1">#include &lt;stdio.h&gt;</span>
-<span class="c1">#include &lt;stdlib.h&gt;</span>
-<span class="c1">#include &lt;math.h&gt;</span>
-<span class="c1">#include &lt;time.h&gt;</span>
-<span class="c1">#define STB_IMAGE_IMPLEMENTATION //Librerias para cargar imagen</span>
-<span class="c1">#include &quot;stb_image.h&quot;</span>
-<span class="c1">#define STB_IMAGE_WRITE_IMPLEMENTATION //libreria para guardar imagenes.</span>
-<span class="c1">#include &quot;stb_image_write.h&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%writefile filtro_image.c
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+#include &lt;time.h&gt;
+#define STB_IMAGE_IMPLEMENTATION //Librerias para cargar imagen
+#include &quot;stb_image.h&quot;
+#define STB_IMAGE_WRITE_IMPLEMENTATION //libreria para guardar imagenes.
+#include &quot;stb_image_write.h&quot;
 
-<span class="n">void</span> <span class="n">aplicar_filtro_bordes</span><span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="nb">input</span><span class="p">,</span> <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="nb">int</span> <span class="n">width</span><span class="p">,</span> <span class="nb">int</span> <span class="n">height</span><span class="p">,</span> <span class="nb">int</span> <span class="n">channels</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">kernel_x</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">}};</span>
-    <span class="nb">int</span> <span class="n">kernel_y</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">}};</span>
+void aplicar_filtro_bordes(unsigned char *input, unsigned char *output, int width, int height, int channels) {
+    int kernel_x[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+    int kernel_y[3][3] = {{1, 2, 1}, {0, 0, 0}, {-1, -2, -1}};
 
-    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nb">float</span> <span class="n">gx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">gy</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">ky</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">ky</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">ky</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">kx</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">kx</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">kx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="nb">int</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[(</span><span class="n">y</span> <span class="o">+</span> <span class="n">ky</span><span class="p">)</span> <span class="o">*</span> <span class="n">width</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">kx</span><span class="p">)];</span>
-                    <span class="n">gx</span> <span class="o">+=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">kernel_x</span><span class="p">[</span><span class="n">ky</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">kx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-                    <span class="n">gy</span> <span class="o">+=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">kernel_y</span><span class="p">[</span><span class="n">ky</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">kx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-            <span class="nb">int</span> <span class="n">magnitude</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="n">sqrt</span><span class="p">(</span><span class="n">gx</span> <span class="o">*</span> <span class="n">gx</span> <span class="o">+</span> <span class="n">gy</span> <span class="o">*</span> <span class="n">gy</span><span class="p">);</span>
-            <span class="n">magnitude</span> <span class="o">=</span> <span class="n">magnitude</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="err">?</span> <span class="mi">255</span> <span class="p">:</span> <span class="n">magnitude</span><span class="p">;</span>
-            <span class="n">output</span><span class="p">[</span><span class="n">y</span> <span class="o">*</span> <span class="n">width</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span><span class="p">)</span><span class="n">magnitude</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+    for (int y = 1; y &lt; height - 1; y++) {
+        for (int x = 1; x &lt; width - 1; x++) {
+            float gx = 0, gy = 0;
+            for (int ky = -1; ky &lt;= 1; ky++) {
+                for (int kx = -1; kx &lt;= 1; kx++) {
+                    int p = input[(y + ky) * width + (x + kx)];
+                    gx += p * kernel_x[ky + 1][kx + 1];
+                    gy += p * kernel_y[ky + 1][kx + 1];
+                }
+            }
+            int magnitude = (int)sqrt(gx * gx + gy * gy);
+            magnitude = magnitude &gt; 255 ? 255 : magnitude;
+            output[y * width + x] = (unsigned char)magnitude;
+        }
+    }
+}
 
-<span class="nb">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">channels</span><span class="p">;</span>
-    <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">img</span> <span class="o">=</span> <span class="n">stbi_load</span><span class="p">(</span><span class="s2">&quot;imagen.jpeg&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">width</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">height</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">channels</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">img</span> <span class="o">==</span> <span class="n">NULL</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error al cargar la imagen</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
+int main() {
+    int width, height, channels;
+    unsigned char *img = stbi_load(&quot;imagen.jpeg&quot;, &amp;width, &amp;height, &amp;channels, 1);
+    if (img == NULL) {
+        printf(&quot;Error al cargar la imagen\n&quot;);
+        return 1;
+    }
 
-    <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">output_img</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">height</span> <span class="o">*</span> <span class="n">sizeof</span><span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span><span class="p">));</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">output_img</span> <span class="o">==</span> <span class="n">NULL</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;No se pudo asignar memoria para la imagen de salida</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
-        <span class="n">stbi_image_free</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
+    unsigned char *output_img = malloc(width * height * sizeof(unsigned char));
+    if (output_img == NULL) {
+        printf(&quot;No se pudo asignar memoria para la imagen de salida\n&quot;);
+        stbi_image_free(img);
+        return 1;
+    }
 
-    <span class="n">clock_t</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">;</span>
-    <span class="n">double</span> <span class="n">cpu_time_used</span><span class="p">;</span>
+    clock_t start, end;
+    double cpu_time_used;
 
-    <span class="n">start</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
-    <span class="n">aplicar_filtro_bordes</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">output_img</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">channels</span><span class="p">);</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
-    <span class="n">cpu_time_used</span> <span class="o">=</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span> <span class="o">/</span> <span class="n">CLOCKS_PER_SEC</span><span class="p">;</span>
+    start = clock();
+    aplicar_filtro_bordes(img, output_img, width, height, channels);
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-    <span class="n">stbi_write_jpg</span><span class="p">(</span><span class="s2">&quot;imagen_con_bordes.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">output_img</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+    stbi_write_jpg(&quot;imagen_con_bordes.jpg&quot;, width, height, 1, output_img, 100);
 
-    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Tiempo de ejecución: </span><span class="si">%f</span><span class="s2"> segundos</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cpu_time_used</span><span class="p">);</span>
+    printf(&quot;Tiempo de ejecución: %f segundos\n&quot;, cpu_time_used);
 
-    <span class="n">stbi_image_free</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
-    <span class="n">free</span><span class="p">(</span><span class="n">output_img</span><span class="p">);</span>
+    stbi_image_free(img);
+    free(output_img);
 
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+    return 0;
+}
 </pre></div>
 </div>
 </div>
@@ -766,11 +735,11 @@ imagen.jpeg         100%[===================&gt;]  32.49K  --.-KB/s    in 0.01s
 </div>
 </div>
 <section id="descargamos-los-archivos-de-las-librerias-externas">
-<h3>Descargamos los archivos de las librerías externas<a class="headerlink" href="#descargamos-los-archivos-de-las-librerias-externas" title="Link to this heading">#</a></h3>
+<h3>Descargamos los archivos de las librerías externas<a class="headerlink" href="#descargamos-los-archivos-de-las-librerias-externas" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nothings</span><span class="o">/</span><span class="n">stb</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">stb_image</span><span class="o">.</span><span class="n">h</span>
-<span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">nothings</span><span class="o">/</span><span class="n">stb</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">stb_image_write</span><span class="o">.</span><span class="n">h</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!wget https://raw.githubusercontent.com/nothings/stb/master/stb_image.h
+!wget https://raw.githubusercontent.com/nothings/stb/master/stb_image_write.h
 </pre></div>
 </div>
 </div>
@@ -804,10 +773,10 @@ stb_image_write.h   100%[===================&gt;]  69.55K  --.-KB/s    in 0.02s
 </div>
 </section>
 <section id="verificamos-que-se-descarguen-los-archivos">
-<h3>Verificamos que se descarguen los archivos.<a class="headerlink" href="#verificamos-que-se-descarguen-los-archivos" title="Link to this heading">#</a></h3>
+<h3>Verificamos que se descarguen los archivos.<a class="headerlink" href="#verificamos-que-se-descarguen-los-archivos" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!ls -l
 </pre></div>
 </div>
 </div>
@@ -827,18 +796,18 @@ drwxr-xr-x 1 root root   4096 Nov 28 14:27 sample_data
 </div>
 </section>
 <section id="se-compila-el-programa-con-los-respectivas-banderas-para-tomar-las-librerias">
-<h3>Se compila el programa con los respectivas banderas para tomar las librerias<a class="headerlink" href="#se-compila-el-programa-con-los-respectivas-banderas-para-tomar-las-librerias" title="Link to this heading">#</a></h3>
+<h3>Se compila el programa con los respectivas banderas para tomar las librerias<a class="headerlink" href="#se-compila-el-programa-con-los-respectivas-banderas-para-tomar-las-librerias" title="Permalink to this heading">#</a></h3>
 <p>-lm es para que compile la libreria de funciones matemática como sqrt()</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">gcc</span> <span class="n">filtro_image</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">filtro_image</span> <span class="o">-</span><span class="n">lm</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!gcc filtro_image.c -o filtro_image -lm
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="o">./</span><span class="n">filtro_image</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!./filtro_image
 </pre></div>
 </div>
 </div>
@@ -851,13 +820,13 @@ drwxr-xr-x 1 root root   4096 Nov 28 14:27 sample_data
 </section>
 </section>
 <section id="ahora-con-openmp">
-<h2>Ahora con OpenMP<a class="headerlink" href="#ahora-con-openmp" title="Link to this heading">#</a></h2>
+<h2>Ahora con OpenMP<a class="headerlink" href="#ahora-con-openmp" title="Permalink to this heading">#</a></h2>
 <section id="descargamos-las-librerias-utiles">
-<h3>Descargamos las librerías útiles.<a class="headerlink" href="#descargamos-las-librerias-utiles" title="Link to this heading">#</a></h3>
+<h3>Descargamos las librerías útiles.<a class="headerlink" href="#descargamos-las-librerias-utiles" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
-<span class="err">!</span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!sudo apt-get update
+!sudo apt-get install build-essential
 </pre></div>
 </div>
 </div>
@@ -895,7 +864,7 @@ build-essential is already the newest version (12.9ubuntu3).
 </div>
 </section>
 <section id="escribimos-el-programa-usando-openmp">
-<h3>Escribimos el programa usando openMP.<a class="headerlink" href="#escribimos-el-programa-usando-openmp" title="Link to this heading">#</a></h3>
+<h3>Escribimos el programa usando openMP.<a class="headerlink" href="#escribimos-el-programa-usando-openmp" title="Permalink to this heading">#</a></h3>
 <p>Note que la diferencia respecto al secuencial es la línea:</p>
 <div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma omp parallel for collapse(2)</span>
 </pre></div>
@@ -907,71 +876,71 @@ build-essential is already the newest version (12.9ubuntu3).
 <p>Verifique que el bucle externo itera a través de las filas (y) de la imagen y el bucle interno a través de las columnas (x). Al usar collapse(2), se trata la combinación de estas dos dimensiones como un único conjunto de iteraciones, lo que permite una distribución más eficiente de las iteraciones entre los hilos de OpenMP.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="n">tu_programa</span><span class="o">.</span><span class="n">c</span>
-<span class="c1">#include &lt;stdio.h&gt;</span>
-<span class="c1">#include &lt;stdlib.h&gt;</span>
-<span class="c1">#include &lt;math.h&gt;</span>
-<span class="c1">#include &lt;time.h&gt;</span>
-<span class="c1">#include &lt;omp.h&gt;</span>
-<span class="c1">#define STB_IMAGE_IMPLEMENTATION</span>
-<span class="c1">#include &quot;stb_image.h&quot;</span>
-<span class="c1">#define STB_IMAGE_WRITE_IMPLEMENTATION</span>
-<span class="c1">#include &quot;stb_image_write.h&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>%%writefile tu_programa.c
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;math.h&gt;
+#include &lt;time.h&gt;
+#include &lt;omp.h&gt;
+#define STB_IMAGE_IMPLEMENTATION
+#include &quot;stb_image.h&quot;
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include &quot;stb_image_write.h&quot;
 
-<span class="n">void</span> <span class="n">aplicar_filtro_bordes</span><span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="nb">input</span><span class="p">,</span> <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="nb">int</span> <span class="n">width</span><span class="p">,</span> <span class="nb">int</span> <span class="n">height</span><span class="p">,</span> <span class="nb">int</span> <span class="n">channels</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">kernel_x</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">}};</span>
-    <span class="nb">int</span> <span class="n">kernel_y</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="p">{{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">},</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">}};</span>
+void aplicar_filtro_bordes(unsigned char *input, unsigned char *output, int width, int height, int channels) {
+    int kernel_x[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+    int kernel_y[3][3] = {{1, 2, 1}, {0, 0, 0}, {-1, -2, -1}};
 
-    <span class="c1">#pragma omp parallel for collapse(2)</span>
-    <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">height</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">width</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nb">float</span> <span class="n">gx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">gy</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-            <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">ky</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">ky</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">ky</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">for</span> <span class="p">(</span><span class="nb">int</span> <span class="n">kx</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">kx</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">kx</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="nb">int</span> <span class="n">p</span> <span class="o">=</span> <span class="nb">input</span><span class="p">[(</span><span class="n">y</span> <span class="o">+</span> <span class="n">ky</span><span class="p">)</span> <span class="o">*</span> <span class="n">width</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">kx</span><span class="p">)];</span>
-                    <span class="n">gx</span> <span class="o">+=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">kernel_x</span><span class="p">[</span><span class="n">ky</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">kx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-                    <span class="n">gy</span> <span class="o">+=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">kernel_y</span><span class="p">[</span><span class="n">ky</span> <span class="o">+</span> <span class="mi">1</span><span class="p">][</span><span class="n">kx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-            <span class="nb">int</span> <span class="n">magnitude</span> <span class="o">=</span> <span class="p">(</span><span class="nb">int</span><span class="p">)</span><span class="n">sqrt</span><span class="p">(</span><span class="n">gx</span> <span class="o">*</span> <span class="n">gx</span> <span class="o">+</span> <span class="n">gy</span> <span class="o">*</span> <span class="n">gy</span><span class="p">);</span>
-            <span class="n">magnitude</span> <span class="o">=</span> <span class="n">magnitude</span> <span class="o">&gt;</span> <span class="mi">255</span> <span class="err">?</span> <span class="mi">255</span> <span class="p">:</span> <span class="n">magnitude</span><span class="p">;</span>
-            <span class="n">output</span><span class="p">[</span><span class="n">y</span> <span class="o">*</span> <span class="n">width</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span><span class="p">)</span><span class="n">magnitude</span><span class="p">;</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+    #pragma omp parallel for collapse(2)
+    for (int y = 1; y &lt; height - 1; y++) {
+        for (int x = 1; x &lt; width - 1; x++) {
+            float gx = 0, gy = 0;
+            for (int ky = -1; ky &lt;= 1; ky++) {
+                for (int kx = -1; kx &lt;= 1; kx++) {
+                    int p = input[(y + ky) * width + (x + kx)];
+                    gx += p * kernel_x[ky + 1][kx + 1];
+                    gy += p * kernel_y[ky + 1][kx + 1];
+                }
+            }
+            int magnitude = (int)sqrt(gx * gx + gy * gy);
+            magnitude = magnitude &gt; 255 ? 255 : magnitude;
+            output[y * width + x] = (unsigned char)magnitude;
+        }
+    }
+}
 
-<span class="nb">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nb">int</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">channels</span><span class="p">;</span>
-    <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">img</span> <span class="o">=</span> <span class="n">stbi_load</span><span class="p">(</span><span class="s2">&quot;imagen.jpeg&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">width</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">height</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">channels</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">img</span> <span class="o">==</span> <span class="n">NULL</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Error al cargar la imagen</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
+int main() {
+    int width, height, channels;
+    unsigned char *img = stbi_load(&quot;imagen.jpeg&quot;, &amp;width, &amp;height, &amp;channels, 1);
+    if (img == NULL) {
+        printf(&quot;Error al cargar la imagen\n&quot;);
+        return 1;
+    }
 
-    <span class="n">unsigned</span> <span class="n">char</span> <span class="o">*</span><span class="n">output_img</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="n">height</span> <span class="o">*</span> <span class="n">sizeof</span><span class="p">(</span><span class="n">unsigned</span> <span class="n">char</span><span class="p">));</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">output_img</span> <span class="o">==</span> <span class="n">NULL</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;No se pudo asignar memoria para la imagen de salida</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">);</span>
-        <span class="n">stbi_image_free</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="p">}</span>
+    unsigned char *output_img = malloc(width * height * sizeof(unsigned char));
+    if (output_img == NULL) {
+        printf(&quot;No se pudo asignar memoria para la imagen de salida\n&quot;);
+        stbi_image_free(img);
+        return 1;
+    }
 
-    <span class="n">clock_t</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">;</span>
-    <span class="n">double</span> <span class="n">cpu_time_used</span><span class="p">;</span>
+    clock_t start, end;
+    double cpu_time_used;
 
-    <span class="n">start</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
-    <span class="n">aplicar_filtro_bordes</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">output_img</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">channels</span><span class="p">);</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="n">clock</span><span class="p">();</span>
-    <span class="n">cpu_time_used</span> <span class="o">=</span> <span class="p">((</span><span class="n">double</span><span class="p">)</span> <span class="p">(</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">))</span> <span class="o">/</span> <span class="n">CLOCKS_PER_SEC</span><span class="p">;</span>
+    start = clock();
+    aplicar_filtro_bordes(img, output_img, width, height, channels);
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-    <span class="n">stbi_write_jpg</span><span class="p">(</span><span class="s2">&quot;imagen_con_bordes.jpg&quot;</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">output_img</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+    stbi_write_jpg(&quot;imagen_con_bordes.jpg&quot;, width, height, 1, output_img, 100);
 
-    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;Tiempo de ejecución: </span><span class="si">%f</span><span class="s2"> segundos</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">cpu_time_used</span><span class="p">);</span>
+    printf(&quot;Tiempo de ejecución: %f segundos\n&quot;, cpu_time_used);
 
-    <span class="n">stbi_image_free</span><span class="p">(</span><span class="n">img</span><span class="p">);</span>
-    <span class="n">free</span><span class="p">(</span><span class="n">output_img</span><span class="p">);</span>
+    stbi_image_free(img);
+    free(output_img);
 
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+    return 0;
+}
 </pre></div>
 </div>
 </div>
@@ -983,14 +952,14 @@ build-essential is already the newest version (12.9ubuntu3).
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">gcc</span> <span class="n">tu_programa</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">tu_programa</span> <span class="o">-</span><span class="n">fopenmp</span> <span class="o">-</span><span class="n">lm</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!gcc tu_programa.c -o tu_programa -fopenmp -lm
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="o">./</span><span class="n">tu_programa</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!./tu_programa
 </pre></div>
 </div>
 </div>
@@ -1017,7 +986,7 @@ build-essential is already the newest version (12.9ubuntu3).
         },
         kernelOptions: {
             name: "python3",
-            path: "./Unidades/Unidad_8"
+            path: "./Unidades\Unidad_8"
         },
         predefinedOutput: true
     }
@@ -1029,12 +998,16 @@ build-essential is already the newest version (12.9ubuntu3).
 
               
               
-              
-              
-                <footer class="prev-next-footer">
+                <footer class="bd-footer-article">
                   
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -1043,10 +1016,9 @@ build-essential is already the newest version (12.9ubuntu3).
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenido
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
@@ -1081,17 +1053,16 @@ build-essential is already the newest version (12.9ubuntu3).
   <div class="footer-item">
     
 <p class="component-author">
-By Reinel Tabares, Johan Piña, Brayan Arteaga
+Por Reinel Tabares, Johan Piña, Brayan Arteaga
 </p>
 
   </div>
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2024.
       <br/>
     
   </p>
@@ -1115,8 +1086,8 @@ By Reinel Tabares, Johan Piña, Brayan Arteaga
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
