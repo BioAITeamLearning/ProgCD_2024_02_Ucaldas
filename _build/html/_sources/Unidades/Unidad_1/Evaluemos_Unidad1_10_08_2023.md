@@ -1,12 +1,12 @@
 # Evaluemos lo aprendido!! 
 
-## Taller Unidad 1: Repaso Python para Programación concurrente y distribuida
+## Taller Unidad 1: Repaso Python para Programación Concurrente y Distribuida
 
-El siguiente taller debe ser resuelto individualmente
-Para la entrega, debe enviar un (1) solo noteook con todos los ejercicios
-Cada celda debe contener la solución de un punto del taller. Todo debe estar debidamente comentariado y demarcado con secciones markdown.
+El siguiente taller debe ser resuelto individualmente.
+Para la entrega, debe enviar un (1) solo noteook con todos los ejercicios.
+Cada celda debe contener la solución de un punto del taller. Todo debe estar debidamente comentado y demarcado con secciones markdown.
 
-El taller debe tener el siguiente nombre: **Concurrente_Taller1_NombreApellido_2023_03**
+El taller debe tener el siguiente nombre: **Concurrente_Taller1_NombreApellido_2024_01**
 
 ::::{card-carousel} 1
 
