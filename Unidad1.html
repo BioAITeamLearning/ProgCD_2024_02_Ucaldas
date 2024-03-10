@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="es" >
+<html lang="es" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Unidad 1: Clusters en computación paralela/distribuida &#8212; Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas</title>
   
@@ -19,49 +18,54 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=78d55cf8"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/translations.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/translations.js?v=efdbd0b9"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad1';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -76,7 +80,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -111,11 +123,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -130,9 +145,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -142,12 +159,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-light" alt="Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas - Home"/>
+    <script>document.write(`<img src="https://avatars.githubusercontent.com/u/142033488?s=200&v=4" class="logo__image only-dark" alt="Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -367,20 +395,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -435,17 +465,17 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="unidad-1-clusters-en-computacion-paralela-distribuida">
-<h1>Unidad 1: Clusters en computación paralela/distribuida<a class="headerlink" href="#unidad-1-clusters-en-computacion-paralela-distribuida" title="Permalink to this heading">#</a></h1>
+<h1>Unidad 1: Clusters en computación paralela/distribuida<a class="headerlink" href="#unidad-1-clusters-en-computacion-paralela-distribuida" title="Link to this heading">#</a></h1>
 <section id="contenido-de-la-unidad">
-<h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Permalink to this heading">#</a></h2>
+<h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Link to this heading">#</a></h2>
 <img src="_static/images/contenidoU1.png"/>
 </section>
 <hr class="docutils" />
 <section id="introduccion-al-hpc">
-<h2>Introducción al HPC<a class="headerlink" href="#introduccion-al-hpc" title="Permalink to this heading">#</a></h2>
+<h2>Introducción al HPC<a class="headerlink" href="#introduccion-al-hpc" title="Link to this heading">#</a></h2>
 <p><strong>HPC</strong>: Cualquier  técnica computacional que soluciona un problema grande de forma más rápida que usando posiblemente sistemas simples.</p>
 <p>HPC ha tenido gran impacto sobre todas las áreas de ciencias computacionales e ingeniería en la academia, gobierno e industria.</p>
 <p>Muchos problemas han sido solucionados con técnicas de <strong>HPC</strong> que eran imposibles de solucionar con estaciones de trabajo individuales o computadores personales.</p>
@@ -469,7 +499,7 @@ Computación paralela<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Sistemas simples con varios procesadores trabajando sobre el mismo problema</p>
 <img src="https://www.researchgate.net/publication/270881492/figure/fig1/AS:669030503428115@1536520710504/Programacion-Paralela-y-Distribuida.ppm" />
-<p class="rubric">Computación paralela Vs Computador paralelo</p>
+<h4 class="rubric" id="computacion-paralela-vs-computador-paralelo">Computación paralela Vs Computador paralelo</h4>
 <ul class="simple">
 <li><p class="sd-card-text">Computación Paralela: el uso de múltiples computadores o procesadores trabajando en conjunto sobre una tarea común</p></li>
 <li><p class="sd-card-text">Computador Paralelo: un computador que contiene múltiples procesadores:</p>
@@ -502,7 +532,7 @@ Computación Distribuida<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Varios sistemas acoplados por un  secuenciador de trabajo sobre problemas relacionados</p>
 <img src="_static/images/U1_12.png"/>
-<p class="rubric">Sistemas distribuidos</p>
+<h3 class="rubric" id="sistemas-distribuidos">Sistemas distribuidos</h3>
 <img src="_static/images/U1_5.png"/>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -515,7 +545,7 @@ Computación grid<div class="sd-summary-down docutils">
 <img src="_static/images/U1_3.png"/>
 <p class="sd-card-text">Varios sistemas acoplados por software y redes para trabajar en conjunto en problemas simples o en problemas relacionados.</p>
 <p class="sd-card-text">Unión de Clusters de computadores, recursos computacionales, datos, grupos de investigación, científicos, etc., distribuidos geográficamente y conectados mediante redes WAN</p>
-<p class="rubric">Funcionamiento de la computación grid</p>
+<h4 class="rubric" id="funcionamiento-de-la-computacion-grid">Funcionamiento de la computación grid</h4>
 <p class="sd-card-text">Middleware para comunicación transparente y explotación de recursos.</p>
 <ul class="simple">
 <li><p class="sd-card-text">El objetivo final es usar recursos remotos</p></li>
@@ -526,14 +556,14 @@ Computación grid<div class="sd-summary-down docutils">
 </ul>
 <img src="_static/images/U1_13.png"/>
 <img src="_static/images/U1_16.png"/>
-<p class="rubric">Arquitectura Grid</p>
+<h4 class="rubric" id="arquitectura-grid">Arquitectura Grid</h4>
 <ul class="simple">
 <li><p class="sd-card-text">Capa de aplicación</p></li>
 <li><p class="sd-card-text">Capa de middleware</p></li>
 <li><p class="sd-card-text">Capa de recursos</p></li>
 <li><p class="sd-card-text">Capa de red</p></li>
 </ul>
-<p class="rubric">Middleware</p>
+<h5 class="rubric" id="middleware">Middleware</h5>
 <p class="sd-card-text">El auténtico cerebro del grid, se encarga de las siguientes funciones:</p>
 <ul class="simple">
 <li><p class="sd-card-text">Encontrar lugar conveniente para ejecutar la tarea solicitada por el usuario.</p></li>
@@ -550,13 +580,13 @@ Computación grid<div class="sd-summary-down docutils">
 </details></section>
 <hr class="docutils" />
 <section id="donde-corre-lo-que-se-va-a-programar-en-el-curso">
-<h2>¿Dónde corre lo que se va a programar en el curso?<a class="headerlink" href="#donde-corre-lo-que-se-va-a-programar-en-el-curso" title="Permalink to this heading">#</a></h2>
+<h2>¿Dónde corre lo que se va a programar en el curso?<a class="headerlink" href="#donde-corre-lo-que-se-va-a-programar-en-el-curso" title="Link to this heading">#</a></h2>
 <section id="infraestructura-cluster">
-<h3>Infraestructura: Cluster<a class="headerlink" href="#infraestructura-cluster" title="Permalink to this heading">#</a></h3>
+<h3>Infraestructura: Cluster<a class="headerlink" href="#infraestructura-cluster" title="Link to this heading">#</a></h3>
 <img src="_static/images/U1_2.png"/>
 </section>
 <section id="colas-y-calendarizadores">
-<h3>Colas y calendarizadores<a class="headerlink" href="#colas-y-calendarizadores" title="Permalink to this heading">#</a></h3>
+<h3>Colas y calendarizadores<a class="headerlink" href="#colas-y-calendarizadores" title="Link to this heading">#</a></h3>
 <img src="_static/images/U1_20.png"/>
 <ul class="simple">
 <li><p>Administrar recursos del Clúster</p></li>
@@ -568,22 +598,22 @@ Computación grid<div class="sd-summary-down docutils">
 <img src="_static/images/U1_21.png"/>
 <img src="_static/images/U1_22.png"/>
 <section id="algunos-calendarizadores">
-<h4>Algunos calendarizadores<a class="headerlink" href="#algunos-calendarizadores" title="Permalink to this heading">#</a></h4>
+<h4>Algunos calendarizadores<a class="headerlink" href="#algunos-calendarizadores" title="Link to this heading">#</a></h4>
 <img src="_static/images/U1_23.png"/>
 </section>
 <hr class="docutils" />
 <section id="flujo-de-trabajo-con-calendarizadores">
-<h4>Flujo de trabajo con calendarizadores<a class="headerlink" href="#flujo-de-trabajo-con-calendarizadores" title="Permalink to this heading">#</a></h4>
+<h4>Flujo de trabajo con calendarizadores<a class="headerlink" href="#flujo-de-trabajo-con-calendarizadores" title="Link to this heading">#</a></h4>
 <img src="_static/images/U1_24.png"/>
 </section>
 <hr class="docutils" />
 <section id="asi-se-ve-un-job-para-calendarizador">
-<h4>Así se ve un job para calendarizador<a class="headerlink" href="#asi-se-ve-un-job-para-calendarizador" title="Permalink to this heading">#</a></h4>
+<h4>Así se ve un job para calendarizador<a class="headerlink" href="#asi-se-ve-un-job-para-calendarizador" title="Link to this heading">#</a></h4>
 <img src="_static/images/U1_25.png"/>
 </section>
 </section>
 <section id="infraestructura-cloud">
-<h3>Infraestructura: Cloud<a class="headerlink" href="#infraestructura-cloud" title="Permalink to this heading">#</a></h3>
+<h3>Infraestructura: Cloud<a class="headerlink" href="#infraestructura-cloud" title="Link to this heading">#</a></h3>
 <img src="_static/images/U1_4.png"/>
 <ul class="simple">
 <li><p>Externalizar TI a proveedores de servicio</p></li>
@@ -593,34 +623,35 @@ Computación grid<div class="sd-summary-down docutils">
 </ul>
 </section>
 <section id="computacion-cloud">
-<h3>Computación cloud<a class="headerlink" href="#computacion-cloud" title="Permalink to this heading">#</a></h3>
+<h3>Computación cloud<a class="headerlink" href="#computacion-cloud" title="Link to this heading">#</a></h3>
 <img src="_static/images/U1_18.png"/>
 </section>
 <section id="infraestructura-tradicional-vs-cloud">
-<h3>Infraestructura tradicional Vs Cloud<a class="headerlink" href="#infraestructura-tradicional-vs-cloud" title="Permalink to this heading">#</a></h3>
+<h3>Infraestructura tradicional Vs Cloud<a class="headerlink" href="#infraestructura-tradicional-vs-cloud" title="Link to this heading">#</a></h3>
 <img src="_static/images/U1_19.png"/>
 </section>
 </section>
 <hr class="docutils" />
 <section id="cpu-gpu-tpu">
-<h2>CPU &amp; GPU &amp; TPU<a class="headerlink" href="#cpu-gpu-tpu" title="Permalink to this heading">#</a></h2>
+<h2>CPU &amp; GPU &amp; TPU<a class="headerlink" href="#cpu-gpu-tpu" title="Link to this heading">#</a></h2>
 <img src="_static/images/U1_7.png"/>
 <img src="_static/images/U1_9.png">
 </section>
 <hr class="docutils" />
 <section id="cpu-gpu">
-<h2>CPU &amp; GPU<a class="headerlink" href="#cpu-gpu" title="Permalink to this heading">#</a></h2>
+<h2>CPU &amp; GPU<a class="headerlink" href="#cpu-gpu" title="Link to this heading">#</a></h2>
 <img src="_static/images/U1_8.png"/>
 </section>
 <hr class="docutils" />
 <section id="actualidad-del-software-para-big-data">
-<h2>Actualidad del software para Big Data<a class="headerlink" href="#actualidad-del-software-para-big-data" title="Permalink to this heading">#</a></h2>
+<h2>Actualidad del software para Big Data<a class="headerlink" href="#actualidad-del-software-para-big-data" title="Link to this heading">#</a></h2>
 <img src="_static/images/U1_10.png">
 </section>
 <hr class="docutils" />
 <section id="aplicaciones-del-hpc">
-<h2>Aplicaciones del HPC<a class="headerlink" href="#aplicaciones-del-hpc" title="Permalink to this heading">#</a></h2>
-<img src="_static/images/U1_11.png"/></section>
+<h2>Aplicaciones del HPC<a class="headerlink" href="#aplicaciones-del-hpc" title="Link to this heading">#</a></h2>
+<img src="_static/images/U1_11.png"/>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -650,11 +681,10 @@ Computación grid<div class="sd-summary-down docutils">
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="intro.html"
@@ -674,10 +704,7 @@ Computación grid<div class="sd-summary-down docutils">
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -685,6 +712,7 @@ Computación grid<div class="sd-summary-down docutils">
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -732,6 +760,7 @@ Por Reinel Tabares, Johan Piña, Brayan Arteaga
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2024.
@@ -758,8 +787,8 @@ Por Reinel Tabares, Johan Piña, Brayan Arteaga
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
