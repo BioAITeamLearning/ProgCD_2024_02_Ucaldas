@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Unidad 1: Clusters en computación paralela/distribuida &#8212; Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas</title>
+    <title>Unidad 2: Arquitecturas para computación paralela &#8212; Programación Concurrente y Distribuida 2024 - 01 G1 Ucaldas</title>
   
   
   
@@ -66,11 +66,11 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Unidad2';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Repaso Python y C para programación concurrente y distribuida" href="Unidades/Unidad_1/repasoPythonC.html" />
-    <link rel="prev" title="Programación Concurrente y Distribuida" href="intro.html" />
+    <link rel="next" title="Unidad 3: Métricas de desempeño" href="Unidad3.html" />
+    <link rel="prev" title="Evaluemos lo aprendido!!" href="Unidades/Unidad_1/Evaluemos_Unidad1_10_08_2023.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -186,7 +186,7 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Unidad 1: Clusters en computación paralela/distribuida</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Unidad1.html">Unidad 1: Clusters en computación paralela/distribuida</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/repasoPythonC.html">Repaso Python y C para programación concurrente y distribuida</a></li>
 
 
@@ -242,7 +242,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_1/Evaluemos_Unidad1_10_08_2023.html">Evaluemos lo aprendido!!</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Unidad2.html">Unidad 2: Arquitecturas para computación paralela</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Unidad 2: Arquitecturas para computación paralela</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="Unidad3.html">Unidad 3: Métricas de desempeño</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/Ejercicio.html">Ejercicio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Unidades/Unidad_3/Ley%20de%20Amdahl.html">Ley de Amdahl</a></li>
@@ -321,7 +321,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/BioAITeamLearning/ProgCD_2024_01_G1_Ucaldas/issues/new?title=Issue%20on%20page%20%2FUnidad1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/BioAITeamLearning/ProgCD_2024_01_G1_Ucaldas/issues/new?title=Issue%20on%20page%20%2FUnidad2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -351,7 +351,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/Unidad1.md" target="_blank"
+      <li><a href="_sources/Unidad2.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -435,7 +435,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Unidad 1: Clusters en computación paralela/distribuida</h1>
+    <h1>Unidad 2: Arquitecturas para computación paralela</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -446,24 +446,27 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-al-hpc">Introducción al HPC</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donde-corre-lo-que-se-va-a-programar-en-el-curso">¿Dónde corre lo que se va a programar en el curso?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-cluster">Infraestructura: Cluster</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colas-y-calendarizadores">Colas y calendarizadores</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#algunos-calendarizadores">Algunos calendarizadores</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-trabajo-con-calendarizadores">Flujo de trabajo con calendarizadores</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#asi-se-ve-un-job-para-calendarizador">Así se ve un job para calendarizador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arquitectura-de-memoria-en-computacion-paralela">Arquitectura de memoria en computación paralela</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taxonomia-de-flynn">Taxonomía de Flynn</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-cloud">Infraestructura: Cloud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computacion-cloud">Computación cloud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-tradicional-vs-cloud">Infraestructura tradicional Vs Cloud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organizacion-de-la-memoria">Organización de la memoria</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memoria-compartida">Memoria Compartida</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-acceso-a-memoria-en-memoria-compartida">Tipos de acceso a memoria en memoria compartida</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpu-gpu-tpu">CPU &amp; GPU &amp; TPU</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpu-gpu">CPU &amp; GPU</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualidad-del-software-para-big-data">Actualidad del software para Big Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicaciones-del-hpc">Aplicaciones del HPC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memoria-distribuida-sistemas-multicomputadores">Memoria Distribuida: Sistemas Multicomputadores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-programacion-paralela">Modelos de programación paralela</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradigma-del-modelo-de-paso-de-mensajes">Paradigma del modelo de paso de mensajes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-de-datos-paralelos">Modelo de datos paralelos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-disenar-un-programa-paralelo">¿Cómo diseñar un programa paralelo ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-foster-para-diseno">Metodología foster para diseño</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -475,193 +478,234 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="unidad-1-clusters-en-computacion-paralela-distribuida">
-<h1>Unidad 1: Clusters en computación paralela/distribuida<a class="headerlink" href="#unidad-1-clusters-en-computacion-paralela-distribuida" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="unidad-2-arquitecturas-para-computacion-paralela">
+<h1>Unidad 2: Arquitecturas para computación paralela<a class="headerlink" href="#unidad-2-arquitecturas-para-computacion-paralela" title="Link to this heading">#</a></h1>
 <section id="contenido-de-la-unidad">
 <h2>Contenido de la unidad<a class="headerlink" href="#contenido-de-la-unidad" title="Link to this heading">#</a></h2>
-<img src="_static/images/contenidoU1.png"/>
+<img src="_static/images/contenidoU2.png"/>
 </section>
 <hr class="docutils" />
-<section id="introduccion-al-hpc">
-<h2>Introducción al HPC<a class="headerlink" href="#introduccion-al-hpc" title="Link to this heading">#</a></h2>
-<p><strong>HPC</strong>: Cualquier  técnica computacional que soluciona un problema grande de forma más rápida que usando posiblemente sistemas simples.</p>
-<p>HPC ha tenido gran impacto sobre todas las áreas de ciencias computacionales e ingeniería en la academia, gobierno e industria.</p>
-<p>Muchos problemas han sido solucionados con técnicas de <strong>HPC</strong> que eran imposibles de solucionar con estaciones de trabajo individuales o computadores personales.</p>
-<img src="_static/images/U1_1.png"/>
+<section id="arquitectura-de-memoria-en-computacion-paralela">
+<h2>Arquitectura de memoria en computación paralela<a class="headerlink" href="#arquitectura-de-memoria-en-computacion-paralela" title="Link to this heading">#</a></h2>
+<section id="taxonomia-de-flynn">
+<h3>Taxonomía de Flynn<a class="headerlink" href="#taxonomia-de-flynn" title="Link to this heading">#</a></h3>
+<img src="_static/images/U2_1.jpg"/>
+<ul class="simple">
+<li><p><strong>SISD</strong>: El procesador ejecuta una única instrucción en una única pieza de datos en cada ciclo de reloj. - Ordenador.</p></li>
+<li><p><strong>MISD</strong>: Múltiples procesadores ejecutan diferentes instrucciones en el mismo conjunto de datos. Un ejemplo de un sistema MISD es un sistema de detección de fallas de seguridad en tiempo real, en el que varias instrucciones de verificación se ejecutan simultáneamente en la misma pieza de datos para detectar cualquier falla.</p></li>
+<li><p><strong>SIMD</strong>: En este caso, el procesador ejecuta la misma instrucción en varios datos diferentes en cada ciclo de reloj - GPU</p></li>
+<li><p><strong>MIMD</strong>: Múltiples procesadores ejecutan diferentes instrucciones en diferentes conjuntos de datos al mismo tiempo. clúster de servidores que ejecutan aplicaciones separadas en cada servidor, pero se comunican entre sí para realizar una tarea común.</p></li>
+</ul>
 <hr class="docutils" />
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Procesadores de alto rendimiento<div class="sd-summary-down docutils">
+SISD<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<img src="https://hardzone.es/app/uploads-hardzone.es/2023/02/Computacion-Alto-Rendimiento-HPC-Portada.jpg"/>
+<p class="sd-card-text">En un ciclo del reloj:</p>
+<img src="_static/images/U2_2.jpg"/>
+<img src="_static/images/U2_3.jpg"/>
+<h4 class="rubric" id="ejemplo">Ejemplo</h4>
+<img src="_static/images/U2_4.jpg"/>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Computación paralela<div class="sd-summary-down docutils">
+MISD<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Sistemas simples con varios procesadores trabajando sobre el mismo problema</p>
-<img src="https://www.researchgate.net/publication/270881492/figure/fig1/AS:669030503428115@1536520710504/Programacion-Paralela-y-Distribuida.ppm" />
-<h4 class="rubric" id="computacion-paralela-vs-computador-paralelo">Computación paralela Vs Computador paralelo</h4>
-<ul class="simple">
-<li><p class="sd-card-text">Computación Paralela: el uso de múltiples computadores o procesadores trabajando en conjunto sobre una tarea común</p></li>
-<li><p class="sd-card-text">Computador Paralelo: un computador que contiene múltiples procesadores:</p>
-<ul>
-<li><p class="sd-card-text">Cada procesador trabaja sobre una sección del problema</p></li>
-<li><p class="sd-card-text">Los procesadores permiten intercambio de información con otros procesadores</p></li>
-</ul>
-</li>
-</ul>
-<img srcr="https://camo.githubusercontent.com/265827bf0ab59a671404f5a215363de6626c1e3284ad435fbbdf9291746d8bea/687474703a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f662f66312f466f726b5f6a6f696e2e7376672f3130343070782d466f726b5f6a6f696e2e7376672e706e67"/>
-<img src="_static/images/U1_14.png"/>
-<img src="_static/images/U1_15.png">
+<p class="sd-card-text">Poco práctico comercialmente</p>
+<img src="_static/images/U2_5.jpg"/>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Computación/programación Concurrente<div class="sd-summary-down docutils">
+SIMD<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<img src="_static/images/U1_6.png"/>
-<p class="sd-card-text">La programación concurrente se enfoca en manejar múltiples tareas al mismo tiempo (ya sea simultáneamente o dando la ilusión de simultaneidad), la programación paralela se enfoca en la división y ejecución simultánea de tareas para resolver un problema más grande en menos tiempo.</p>
+<p class="sd-card-text">En este se basa la arquitectura de la GPU</p>
+<img src="_static/images/U2_6.jpg"/>
+<h4 class="rubric" id="id1">Ejemplo</h4>
+<img src="_static/images/U2_7.jpg"/>
+<p class="sd-card-text">El procesamiento de imágenes y video se utiliza en una variedad de aplicaciones, como la televisión digital, la realidad aumentada y la vigilancia de seguridad. Para procesar grandes cantidades de datos de imagen y video, se utilizan procesadores SIMD que pueden procesar múltiples datos simultáneamente.</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-Computación Distribuida<div class="sd-summary-down docutils">
+MIMD<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Varios sistemas acoplados por un  secuenciador de trabajo sobre problemas relacionados</p>
-<img src="_static/images/U1_12.png"/>
-<h3 class="rubric" id="sistemas-distribuidos">Sistemas distribuidos</h3>
-<img src="_static/images/U1_5.png"/>
-</div>
-</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
-<summary class="sd-summary-title sd-card-header">
-Computación grid<div class="sd-summary-down docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="sd-summary-up docutils">
-<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="sd-summary-content sd-card-body docutils">
-<img src="_static/images/U1_3.png"/>
-<p class="sd-card-text">Varios sistemas acoplados por software y redes para trabajar en conjunto en problemas simples o en problemas relacionados.</p>
-<p class="sd-card-text">Unión de Clusters de computadores, recursos computacionales, datos, grupos de investigación, científicos, etc., distribuidos geográficamente y conectados mediante redes WAN</p>
-<h4 class="rubric" id="funcionamiento-de-la-computacion-grid">Funcionamiento de la computación grid</h4>
-<p class="sd-card-text">Middleware para comunicación transparente y explotación de recursos.</p>
 <ul class="simple">
-<li><p class="sd-card-text">El objetivo final es usar recursos remotos</p></li>
-<li><p class="sd-card-text">Se requieren conexiones de redes rápidas</p></li>
-<li><p class="sd-card-text">El grid busca el uso eficiente de los recursos</p></li>
-<li><p class="sd-card-text">Es esencial la seguridad centrada en: políticas de acceso, autenticación y autorización.</p></li>
-<li><p class="sd-card-text">Es importante estandarizar las aplicaciones grid.</p></li>
+<li><p class="sd-card-text">Arquitectura aplicada en supercomputadores.</p></li>
+<li><p class="sd-card-text">Async algorithms</p></li>
 </ul>
-<img src="_static/images/U1_13.png"/>
-<img src="_static/images/U1_16.png"/>
-<h4 class="rubric" id="arquitectura-grid">Arquitectura Grid</h4>
-<ul class="simple">
-<li><p class="sd-card-text">Capa de aplicación</p></li>
-<li><p class="sd-card-text">Capa de middleware</p></li>
-<li><p class="sd-card-text">Capa de recursos</p></li>
-<li><p class="sd-card-text">Capa de red</p></li>
-</ul>
-<h5 class="rubric" id="middleware">Middleware</h5>
-<p class="sd-card-text">El auténtico cerebro del grid, se encarga de las siguientes funciones:</p>
-<ul class="simple">
-<li><p class="sd-card-text">Encontrar lugar conveniente para ejecutar la tarea solicitada por el usuario.</p></li>
-<li><p class="sd-card-text">Optimizar el uso de recursos que se encuentren dispersos.</p></li>
-<li><p class="sd-card-text">Organizar el acceso eficiente a los datos.</p></li>
-<li><p class="sd-card-text">Autenticar los diferentes elementos.</p></li>
-<li><p class="sd-card-text">Ejecutar tareas.</p></li>
-<li><p class="sd-card-text">Monitorizar el progreso de los trabajos en ejecución.</p></li>
-<li><p class="sd-card-text">Gestionar automáticamente la recuperación frente a fallos.</p></li>
-<li><p class="sd-card-text">Notificar el fallo, culminación de la ejecución de una tarea y sus resultados.</p></li>
-</ul>
-<img src="_static/images/U1_17.png"/>
+<img src="_static/images/U2_8.jpg"/>
+<h4 class="rubric" id="id2">Ejemplo</h4>
+<img src="_static/images/U2_9.jpg"/>
 </div>
 </details></section>
-<hr class="docutils" />
-<section id="donde-corre-lo-que-se-va-a-programar-en-el-curso">
-<h2>¿Dónde corre lo que se va a programar en el curso?<a class="headerlink" href="#donde-corre-lo-que-se-va-a-programar-en-el-curso" title="Link to this heading">#</a></h2>
-<section id="infraestructura-cluster">
-<h3>Infraestructura: Cluster<a class="headerlink" href="#infraestructura-cluster" title="Link to this heading">#</a></h3>
-<img src="_static/images/U1_2.png"/>
 </section>
-<section id="colas-y-calendarizadores">
-<h3>Colas y calendarizadores<a class="headerlink" href="#colas-y-calendarizadores" title="Link to this heading">#</a></h3>
-<img src="_static/images/U1_20.png"/>
+<hr class="docutils" />
+<section id="organizacion-de-la-memoria">
+<h2>Organización de la memoria<a class="headerlink" href="#organizacion-de-la-memoria" title="Link to this heading">#</a></h2>
+<p>En la arquitectura MIMD</p>
+<img src="_static/images/U2_10.jpg"/>
+<section id="memoria-compartida">
+<h3>Memoria Compartida<a class="headerlink" href="#memoria-compartida" title="Link to this heading">#</a></h3>
+<p>Misma memoria para todos los procesadores.</p>
+<img src="_static/images/U2_11.jpg"/>
 <ul class="simple">
-<li><p>Administrar recursos del Clúster</p></li>
-<li><p>Priorizar trabajos</p></li>
-<li><p>Limitar capacidad de cómputo</p></li>
-<li><p>Administrar usuarios</p></li>
+<li><p>La memoria es la misma para todos los procesadores.</p></li>
+<li><p>Solo un procesador puede tener acceso a la memoria a la vez.</p></li>
+<li><p>La ubicación de una memoria compartida no puede ser cambiada por otro proceso mientras una tarea lo accede.</p></li>
+<li><p>Compartir los datos es rápido, el tiempo requerido para computar dos tareas es el mismo al tiempo de leer una sola ubicación de memoria.</p></li>
 </ul>
-<hr class="docutils" />
-<img src="_static/images/U1_21.png"/>
-<img src="_static/images/U1_22.png"/>
-<section id="algunos-calendarizadores">
-<h4>Algunos calendarizadores<a class="headerlink" href="#algunos-calendarizadores" title="Link to this heading">#</a></h4>
-<img src="_static/images/U1_23.png"/>
-</section>
-<hr class="docutils" />
-<section id="flujo-de-trabajo-con-calendarizadores">
-<h4>Flujo de trabajo con calendarizadores<a class="headerlink" href="#flujo-de-trabajo-con-calendarizadores" title="Link to this heading">#</a></h4>
-<img src="_static/images/U1_24.png"/>
-</section>
-<hr class="docutils" />
-<section id="asi-se-ve-un-job-para-calendarizador">
-<h4>Así se ve un job para calendarizador<a class="headerlink" href="#asi-se-ve-un-job-para-calendarizador" title="Link to this heading">#</a></h4>
-<img src="_static/images/U1_25.png"/>
-</section>
-</section>
-<section id="infraestructura-cloud">
-<h3>Infraestructura: Cloud<a class="headerlink" href="#infraestructura-cloud" title="Link to this heading">#</a></h3>
-<img src="_static/images/U1_4.png"/>
+<section id="tipos-de-acceso-a-memoria-en-memoria-compartida">
+<h4>Tipos de acceso a memoria en memoria compartida<a class="headerlink" href="#tipos-de-acceso-a-memoria-en-memoria-compartida" title="Link to this heading">#</a></h4>
 <ul class="simple">
-<li><p>Externalizar TI a proveedores de servicio</p></li>
-<li><p>Presentar transparencia al usuario final</p></li>
-<li><p>Asignación dinámica de recursos bajo demanda (Sin compartir) – Pago asociado</p></li>
-<li><p>Virtualización</p></li>
+<li><p><strong>Acceso uniforme a la memoria (UMA - Uniform Memory Access)</strong>
+Es una arquitectura de computadora en la que todos los procesadores comparten un acceso igualitario y directo a la memoria principal del sistema. Esto implica que cada procesador puede acceder a cualquier ubicación en la memoria con la misma velocidad y latencia. A medida que se incrementa el número de procesadores, puede surgir un cuello de botella en el ancho de banda de la memoria, lo que limita el rendimiento del sistema.</p></li>
 </ul>
-</section>
-<section id="computacion-cloud">
-<h3>Computación cloud<a class="headerlink" href="#computacion-cloud" title="Link to this heading">#</a></h3>
-<img src="_static/images/U1_18.png"/>
-</section>
-<section id="infraestructura-tradicional-vs-cloud">
-<h3>Infraestructura tradicional Vs Cloud<a class="headerlink" href="#infraestructura-tradicional-vs-cloud" title="Link to this heading">#</a></h3>
-<img src="_static/images/U1_19.png"/>
-</section>
-</section>
-<hr class="docutils" />
-<section id="cpu-gpu-tpu">
-<h2>CPU &amp; GPU &amp; TPU<a class="headerlink" href="#cpu-gpu-tpu" title="Link to this heading">#</a></h2>
-<img src="_static/images/U1_7.png"/>
-<img src="_static/images/U1_9.png">
-</section>
-<hr class="docutils" />
-<section id="cpu-gpu">
-<h2>CPU &amp; GPU<a class="headerlink" href="#cpu-gpu" title="Link to this heading">#</a></h2>
-<img src="_static/images/U1_8.png"/>
-</section>
-<hr class="docutils" />
-<section id="actualidad-del-software-para-big-data">
-<h2>Actualidad del software para Big Data<a class="headerlink" href="#actualidad-del-software-para-big-data" title="Link to this heading">#</a></h2>
-<img src="_static/images/U1_10.png">
-</section>
-<hr class="docutils" />
-<section id="aplicaciones-del-hpc">
-<h2>Aplicaciones del HPC<a class="headerlink" href="#aplicaciones-del-hpc" title="Link to this heading">#</a></h2>
-<img src="_static/images/U1_11.png"/>
-</section>
-<div class="toctree-wrapper compound">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+UMA<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_12.jpg"/>
 </div>
+</details><ul class="simple">
+<li><p><strong>Acceso no-uniforme a la memoria (NUMA - Non-Uniform Memory Access)</strong>
+En una arquitectura NUMA, cada procesador dispone de su memoria local, y el acceso a la memoria remota (es decir, la memoria de otros procesadores) puede ser más lento en comparación con el acceso a la memoria local. Esta variabilidad en el acceso a la memoria depende de la ubicación de la memoria en relación con el procesador que la solicita. Esta arquitectura ofrece una escalabilidad superior para sistemas de alto rendimiento.</p></li>
+</ul>
+<p>En una configuración NUMA, los procesadores se agrupan, y cada grupo posee su propia memoria física compartida. Los procesadores pueden acceder a su memoria local de manera más eficiente que a la memoria de otros grupos, lo que implica un acceso no uniforme a la memoria. Esta característica puede mejorar el rendimiento del sistema en aplicaciones que presentan patrones de acceso a la memoria enfocados en una región específica de esta última.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+NUMA<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_13.jpg"/>
+</div>
+</details><ul class="simple">
+<li><p><strong>Sin acceso remoto a la memoria (NORMA - No-Remote Memory Access)</strong>
+La arquitectura NORMA se distingue al combinar los elementos característicos de las arquitecturas UMA y NUMA. En NORMA, cada procesador disfruta de un acceso directo y uniforme a una región específica de la memoria, al tiempo que mantiene la capacidad de acceder a regiones remotas de la memoria mediante una red de interconexión de alta velocidad. Esta flexibilidad en el acceso a la memoria puede mejorar el rendimiento, especialmente en aplicaciones con patrones de acceso a la memoria más complejos.</p></li>
+</ul>
+<p>Es importante aclarar que NORMA no representa una arquitectura en sí misma, sino más bien un concepto teórico. En este marco, cada procesador conservaría su propia memoria local y no tendría acceso a la memoria de otros procesadores, lo que excluye cualquier posibilidad de compartir memoria entre ellos.</p>
+<ul class="simple">
+<li><p><strong>Acceso solo a la memoria caché (COMA - Cache Only Memory Architecture)</strong>
+En una arquitectura COMA, cada procesador dispone de su propia memoria caché local, pero los datos compartidos se almacenan en una caché común. El acceso a esta memoria caché compartida puede ser más lento. Cuando un procesador necesita acceder a datos ubicados en la caché compartida de otro procesador, primero debe buscarlos en esta caché compartida y luego copiarlos a su propia caché local para su procesamiento.</p></li>
+</ul>
+<p>La arquitectura COMA se caracteriza por que cada procesador tiene su propia memoria caché local, sin que exista una memoria física compartida entre ellos. La comunicación entre los procesadores se lleva a cabo mediante una red de interconexión de alta velocidad para compartir datos. Cuando un procesador necesita acceder a datos que no se encuentran en su caché local, los solicita a otros procesadores en la red. Los datos se almacenan en caché en los procesadores que los necesitan, lo que reduce la latencia de acceso a la memoria. Esta característica puede mejorar el rendimiento del sistema en aplicaciones que presentan patrones de acceso a la memoria centrados en un subconjunto específico de datos.</p>
+</section>
+</section>
+<section id="memoria-distribuida-sistemas-multicomputadores">
+<h3>Memoria Distribuida: Sistemas Multicomputadores<a class="headerlink" href="#memoria-distribuida-sistemas-multicomputadores" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Small complete systems</strong></p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Small complete systems<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_14.jpg"/>
+</div>
+</details><ul class="simple">
+<li><p><strong>Protocolo de paso de mensajes</strong></p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Protocolo de paso de mensajes<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_15.jpg"/>
+</div>
+</details><p>La memoria es físicamente distribuida entre los procesadores, cada memoria local es directamente accesible solo por su procesador.</p>
+<p>Se logra la sincronización moviendo la data.</p>
+<p>Subdividir los datos en la memoria local afecta el rendimiento, se debe hacer cuidadosamente.</p>
+<p>Se usa el protocolo para que cada cpu pueda comunicarse con otra a través del intercambio de paquetes.</p>
+<ul class="simple">
+<li><p><strong>Procesamiento masivo paralelo</strong></p></li>
+</ul>
+<p>Muchos procesadores, conectados por una red de comunicación.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Procesamiento masivo paralelo<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_16.jpg"/>
+</div>
+</details><ul class="simple">
+<li><p><strong>La arquitectura heterogénea</strong></p></li>
+</ul>
+<p>CUDA y OpenCL</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+La arquitectura heterogénea<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<img src="_static/images/U2_17.jpg"/>
+</div>
+</details></section>
+</section>
+<section id="modelos-de-programacion-paralela">
+<h2>Modelos de programación paralela<a class="headerlink" href="#modelos-de-programacion-paralela" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Existen como una abstracción de las arquitecturas de hardware</p></li>
+<li><p>No existe un modelo mejor que otro, depende del problema</p></li>
+</ul>
+<img src="_static/images/U2_18.jpg"/>
+<section id="paradigma-del-modelo-de-paso-de-mensajes">
+<h3>Paradigma del modelo de paso de mensajes<a class="headerlink" href="#paradigma-del-modelo-de-paso-de-mensajes" title="Link to this heading">#</a></h3>
+<p>El modelo MPI está diseñado con memoria distribuida, pero al ser modelos de programación paralela, también puede utilizarse en una máquina de memoria compartida.</p>
+<img src="_static/images/U2_19.jpg"/>
+<p>La grafica muestra que la comunicación entre máquinas puede ser de un procesador a otro desde una tarea a la otra
+y que cada máquina tiene la capacidad tanto de enviar como de recibir datos mediante el protocolo de pasos mensajes que se comunican a través de la red.</p>
+</section>
+<section id="modelo-de-datos-paralelos">
+<h3>Modelo de datos paralelos<a class="headerlink" href="#modelo-de-datos-paralelos" title="Link to this heading">#</a></h3>
+<p>Las GPU de la generación actual operan con alta eficiencia con los datos alineados</p>
+<img src="_static/images/U2_20.jpg"/>
+</section>
+</section>
+<section id="como-disenar-un-programa-paralelo">
+<h2>¿Cómo diseñar un programa paralelo ?<a class="headerlink" href="#como-disenar-un-programa-paralelo" title="Link to this heading">#</a></h2>
+<p>Cuando se diseña un algoritmo es necesario tener en cuenta:</p>
+<ul class="simple">
+<li><p>Los tiempos de las comunicaciones</p></li>
+<li><p>Maximizar el procesamiento en cada nodo o unidad de procesamiento.</p></li>
+<li><p>Los costes de implementar el algoritmo</p></li>
+<li><p>Tiempos de planificación</p></li>
+</ul>
+<img src="_static/images/U2_21.jpg"/>
+<section id="metodologia-foster-para-diseno">
+<h3>Metodología foster para diseño<a class="headerlink" href="#metodologia-foster-para-diseno" title="Link to this heading">#</a></h3>
+<p>Consiste en cuatro etapas:</p>
+<img src="_static/images/U2_22.jpg"/>
+<ul class="simple">
+<li><p><strong>Particionamiento</strong>: En el dominio de los datos o de funciones.</p></li>
+<li><p><strong>Comunicaciones</strong>: Se hace por medio de distintos paradigmas tales como la memoria o paso de mensajes</p></li>
+<li><p><strong>Aglomeración</strong>: Las tareas o datos son agrupados teniendo en cuenta posibles dependencias</p></li>
+<li><p><strong>Mapeo</strong>: Los grupos son asignados a una unidad de procesamiento.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -695,20 +739,20 @@ Computación grid<div class="sd-summary-down docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Unidades/Unidad_1/Evaluemos_Unidad1_10_08_2023.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Programación Concurrente y Distribuida</p>
+        <p class="prev-next-title">Evaluemos lo aprendido!!</p>
       </div>
     </a>
     <a class="right-next"
-       href="Unidades/Unidad_1/repasoPythonC.html"
+       href="Unidad3.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Repaso Python y C para programación concurrente y distribuida</p>
+        <p class="prev-next-title">Unidad 3: Métricas de desempeño</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -729,24 +773,27 @@ Computación grid<div class="sd-summary-down docutils">
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-de-la-unidad">Contenido de la unidad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion-al-hpc">Introducción al HPC</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donde-corre-lo-que-se-va-a-programar-en-el-curso">¿Dónde corre lo que se va a programar en el curso?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-cluster">Infraestructura: Cluster</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#colas-y-calendarizadores">Colas y calendarizadores</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#algunos-calendarizadores">Algunos calendarizadores</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#flujo-de-trabajo-con-calendarizadores">Flujo de trabajo con calendarizadores</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#asi-se-ve-un-job-para-calendarizador">Así se ve un job para calendarizador</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arquitectura-de-memoria-en-computacion-paralela">Arquitectura de memoria en computación paralela</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#taxonomia-de-flynn">Taxonomía de Flynn</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-cloud">Infraestructura: Cloud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computacion-cloud">Computación cloud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infraestructura-tradicional-vs-cloud">Infraestructura tradicional Vs Cloud</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organizacion-de-la-memoria">Organización de la memoria</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memoria-compartida">Memoria Compartida</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-acceso-a-memoria-en-memoria-compartida">Tipos de acceso a memoria en memoria compartida</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpu-gpu-tpu">CPU &amp; GPU &amp; TPU</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cpu-gpu">CPU &amp; GPU</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#actualidad-del-software-para-big-data">Actualidad del software para Big Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicaciones-del-hpc">Aplicaciones del HPC</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#memoria-distribuida-sistemas-multicomputadores">Memoria Distribuida: Sistemas Multicomputadores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-programacion-paralela">Modelos de programación paralela</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#paradigma-del-modelo-de-paso-de-mensajes">Paradigma del modelo de paso de mensajes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-de-datos-paralelos">Modelo de datos paralelos</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-disenar-un-programa-paralelo">¿Cómo diseñar un programa paralelo ?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metodologia-foster-para-diseno">Metodología foster para diseño</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
