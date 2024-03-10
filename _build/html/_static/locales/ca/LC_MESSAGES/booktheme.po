@@ -8,7 +8,6 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Baixeu el fitxer font"
 
@@ -20,73 +19,18 @@ msgstr "Commuta la navegació"
 
 msgid "open issue"
 msgstr "número obert"
-=======
-msgid "Theme by the"
-msgstr "Tema del"
-
-msgid "Open an issue"
-msgstr "Obriu un número"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Descarregar fitxer de quadern"
 
-<<<<<<< HEAD
 msgid "Theme by the"
 msgstr "Tema del"
 
 msgid "Print to PDF"
 msgstr "Imprimeix a PDF"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Tema del llibre Esfinx"
-
-msgid "Edit this page"
-msgstr "Editeu aquesta pàgina"
-
-msgid "By"
-msgstr "Per"
-
-msgid "Copyright"
-msgstr "Copyright"
-
-msgid "Source repository"
-msgstr "Dipòsit de fonts"
-
-msgid "previous page"
-msgstr "Pàgina anterior"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "pàgina següent"
-
-msgid "Toggle navigation"
-msgstr "Commuta la navegació"
-
-msgid "suggest edit"
-msgstr "suggerir edició"
-
-msgid "open issue"
-msgstr "número obert"
-
-msgid "Launch"
-msgstr "Llançament"
-
-msgid "Print to PDF"
-msgstr "Imprimeix a PDF"
-
-msgid "By the"
-msgstr "Per la"
-
-msgid "Last updated on"
-msgstr "Darrera actualització el"
-
-msgid "Download source file"
-msgstr "Baixeu el fitxer font"
 
 msgid "Download this page"
 msgstr "Descarregueu aquesta pàgina"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Copyright"
@@ -120,5 +64,3 @@ msgstr "Per la"
 
 msgid "previous page"
 msgstr "Pàgina anterior"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

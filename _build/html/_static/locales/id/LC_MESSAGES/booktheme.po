@@ -8,7 +8,6 @@ msgstr ""
 "Language: id\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Unduh file sumber"
 
@@ -20,21 +19,10 @@ msgstr "Alihkan navigasi"
 
 msgid "open issue"
 msgstr "masalah terbuka"
-=======
-msgid "Theme by the"
-msgstr "Tema oleh"
-
-msgid "Open an issue"
-msgstr "Buka masalah"
-
-msgid "Contents"
-msgstr "Isi"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Unduh file notebook"
 
-<<<<<<< HEAD
 msgid "repository"
 msgstr "gudang"
 
@@ -43,62 +31,9 @@ msgstr "Tema oleh"
 
 msgid "Print to PDF"
 msgstr "Cetak ke PDF"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Tema Buku Sphinx"
-
-msgid "Fullscreen mode"
-msgstr "Mode layar penuh"
-
-msgid "Edit this page"
-msgstr "Edit halaman ini"
-
-msgid "By"
-msgstr "Oleh"
-
-msgid "Copyright"
-msgstr "hak cipta"
-
-msgid "Source repository"
-msgstr "Repositori sumber"
-
-msgid "previous page"
-msgstr "halaman sebelumnya"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "halaman selanjutnya"
-
-msgid "Toggle navigation"
-msgstr "Alihkan navigasi"
-
-msgid "repository"
-msgstr "gudang"
-
-msgid "suggest edit"
-msgstr "menyarankan edit"
-
-msgid "open issue"
-msgstr "masalah terbuka"
-
-msgid "Launch"
-msgstr "Meluncurkan"
-
-msgid "Print to PDF"
-msgstr "Cetak ke PDF"
-
-msgid "By the"
-msgstr "Oleh"
-
-msgid "Last updated on"
-msgstr "Terakhir diperbarui saat"
-
-msgid "Download source file"
-msgstr "Unduh file sumber"
 
 msgid "Download this page"
 msgstr "Unduh halaman ini"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "hak cipta"
@@ -138,5 +73,3 @@ msgstr "Oleh"
 
 msgid "previous page"
 msgstr "halaman sebelumnya"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

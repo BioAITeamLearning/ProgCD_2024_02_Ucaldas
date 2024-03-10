@@ -8,7 +8,6 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Изтеглете изходния файл"
 
@@ -20,21 +19,10 @@ msgstr "Превключване на навигацията"
 
 msgid "open issue"
 msgstr "отворен брой"
-=======
-msgid "Theme by the"
-msgstr "Тема от"
-
-msgid "Open an issue"
-msgstr "Отворете проблем"
-
-msgid "Contents"
-msgstr "Съдържание"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Изтеглете файла на бележника"
 
-<<<<<<< HEAD
 msgid "repository"
 msgstr "хранилище"
 
@@ -43,62 +31,9 @@ msgstr "Тема от"
 
 msgid "Print to PDF"
 msgstr "Печат в PDF"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Тема на книгата Sphinx"
-
-msgid "Fullscreen mode"
-msgstr "Режим на цял екран"
-
-msgid "Edit this page"
-msgstr "Редактирайте тази страница"
-
-msgid "By"
-msgstr "От"
-
-msgid "Copyright"
-msgstr "Авторско право"
-
-msgid "Source repository"
-msgstr "Хранилище на източника"
-
-msgid "previous page"
-msgstr "предишна страница"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "Следваща страница"
-
-msgid "Toggle navigation"
-msgstr "Превключване на навигацията"
-
-msgid "repository"
-msgstr "хранилище"
-
-msgid "suggest edit"
-msgstr "предложи редактиране"
-
-msgid "open issue"
-msgstr "отворен брой"
-
-msgid "Launch"
-msgstr "Стартиране"
-
-msgid "Print to PDF"
-msgstr "Печат в PDF"
-
-msgid "By the"
-msgstr "По"
-
-msgid "Last updated on"
-msgstr "Последна актуализация на"
-
-msgid "Download source file"
-msgstr "Изтеглете изходния файл"
 
 msgid "Download this page"
 msgstr "Изтеглете тази страница"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Авторско право"
@@ -138,5 +73,3 @@ msgstr "По"
 
 msgid "previous page"
 msgstr "предишна страница"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

@@ -8,7 +8,6 @@ msgstr ""
 "Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Kaynak dosyayı indirin"
 
@@ -20,21 +19,10 @@ msgstr "Gezinmeyi değiştir"
 
 msgid "open issue"
 msgstr "Açık konu"
-=======
-msgid "Theme by the"
-msgstr "Tarafından tema"
-
-msgid "Open an issue"
-msgstr "Bir sorunu açın"
-
-msgid "Contents"
-msgstr "İçindekiler"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Defter dosyasını indirin"
 
-<<<<<<< HEAD
 msgid "repository"
 msgstr "depo"
 
@@ -43,62 +31,9 @@ msgstr "Tarafından tema"
 
 msgid "Print to PDF"
 msgstr "PDF olarak yazdır"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Sfenks Kitap Teması"
-
-msgid "Fullscreen mode"
-msgstr "Tam ekran modu"
-
-msgid "Edit this page"
-msgstr "Bu sayfayı düzenle"
-
-msgid "By"
-msgstr "Tarafından"
-
-msgid "Copyright"
-msgstr "Telif hakkı"
-
-msgid "Source repository"
-msgstr "Kaynak kod deposu"
-
-msgid "previous page"
-msgstr "önceki sayfa"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "sonraki Sayfa"
-
-msgid "Toggle navigation"
-msgstr "Gezinmeyi değiştir"
-
-msgid "repository"
-msgstr "depo"
-
-msgid "suggest edit"
-msgstr "düzenleme öner"
-
-msgid "open issue"
-msgstr "Açık konu"
-
-msgid "Launch"
-msgstr "Başlatmak"
-
-msgid "Print to PDF"
-msgstr "PDF olarak yazdır"
-
-msgid "By the"
-msgstr "Tarafından"
-
-msgid "Last updated on"
-msgstr "Son güncelleme tarihi"
-
-msgid "Download source file"
-msgstr "Kaynak dosyayı indirin"
 
 msgid "Download this page"
 msgstr "Bu sayfayı indirin"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Telif hakkı"
@@ -138,5 +73,3 @@ msgstr "Tarafından"
 
 msgid "previous page"
 msgstr "önceki sayfa"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

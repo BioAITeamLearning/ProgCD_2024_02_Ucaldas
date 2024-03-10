@@ -8,7 +8,6 @@ msgstr ""
 "Language: tg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Файли манбаъро зеркашӣ кунед"
 
@@ -20,21 +19,10 @@ msgstr "Гузаришро иваз кунед"
 
 msgid "open issue"
 msgstr "барориши кушод"
-=======
-msgid "Theme by the"
-msgstr "Мавзӯъи аз"
-
-msgid "Open an issue"
-msgstr "Масъаларо кушоед"
-
-msgid "Contents"
-msgstr "Мундариҷа"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Файли дафтарро зеркашӣ кунед"
 
-<<<<<<< HEAD
 msgid "repository"
 msgstr "анбор"
 
@@ -43,62 +31,9 @@ msgstr "Мавзӯъи аз"
 
 msgid "Print to PDF"
 msgstr "Чоп ба PDF"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Сфинкс Мавзӯи китоб"
-
-msgid "Fullscreen mode"
-msgstr "Ҳолати экрани пурра"
-
-msgid "Edit this page"
-msgstr "Ин саҳифаро таҳрир кунед"
-
-msgid "By"
-msgstr "Бо"
-
-msgid "Copyright"
-msgstr "Ҳуқуқи муаллиф"
-
-msgid "Source repository"
-msgstr "Анбори манбаъ"
-
-msgid "previous page"
-msgstr "саҳифаи қаблӣ"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "саҳифаи оянда"
-
-msgid "Toggle navigation"
-msgstr "Гузаришро иваз кунед"
-
-msgid "repository"
-msgstr "анбор"
-
-msgid "suggest edit"
-msgstr "пешниҳод вироиш"
-
-msgid "open issue"
-msgstr "барориши кушод"
-
-msgid "Launch"
-msgstr "Оғоз"
-
-msgid "Print to PDF"
-msgstr "Чоп ба PDF"
-
-msgid "By the"
-msgstr "Бо"
-
-msgid "Last updated on"
-msgstr "Last навсозӣ дар"
-
-msgid "Download source file"
-msgstr "Файли манбаъро зеркашӣ кунед"
 
 msgid "Download this page"
 msgstr "Ин саҳифаро зеркашӣ кунед"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Ҳуқуқи муаллиф"
@@ -138,5 +73,3 @@ msgstr "Бо"
 
 msgid "previous page"
 msgstr "саҳифаи қаблӣ"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

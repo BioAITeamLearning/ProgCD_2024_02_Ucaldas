@@ -8,7 +8,6 @@ msgstr ""
 "Language: uk\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Завантажити вихідний файл"
 
@@ -20,21 +19,10 @@ msgstr "Переключити навігацію"
 
 msgid "open issue"
 msgstr "відкритий випуск"
-=======
-msgid "Theme by the"
-msgstr "Тема від"
-
-msgid "Open an issue"
-msgstr "Відкрийте випуск"
-
-msgid "Contents"
-msgstr "Зміст"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Завантажте файл блокнота"
 
-<<<<<<< HEAD
 msgid "repository"
 msgstr "сховище"
 
@@ -43,62 +31,9 @@ msgstr "Тема від"
 
 msgid "Print to PDF"
 msgstr "Друк у форматі PDF"
-=======
-msgid "Sphinx Book Theme"
-msgstr "Тема книги \"Сфінкс\""
-
-msgid "Fullscreen mode"
-msgstr "Повноекранний режим"
-
-msgid "Edit this page"
-msgstr "Редагувати цю сторінку"
-
-msgid "By"
-msgstr "Автор"
-
-msgid "Copyright"
-msgstr "Авторське право"
-
-msgid "Source repository"
-msgstr "Джерело сховища"
-
-msgid "previous page"
-msgstr "Попередня сторінка"
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
-
-msgid "next page"
-msgstr "Наступна сторінка"
-
-msgid "Toggle navigation"
-msgstr "Переключити навігацію"
-
-msgid "repository"
-msgstr "сховище"
-
-msgid "suggest edit"
-msgstr "запропонувати редагувати"
-
-msgid "open issue"
-msgstr "відкритий випуск"
-
-msgid "Launch"
-msgstr "Запуск"
-
-msgid "Print to PDF"
-msgstr "Друк у форматі PDF"
-
-msgid "By the"
-msgstr "По"
-
-msgid "Last updated on"
-msgstr "Останнє оновлення:"
-
-msgid "Download source file"
-msgstr "Завантажити вихідний файл"
 
 msgid "Download this page"
 msgstr "Завантажте цю сторінку"
-<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Авторське право"
@@ -138,5 +73,3 @@ msgstr "По"
 
 msgid "previous page"
 msgstr "Попередня сторінка"
-=======
->>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
