@@ -13,7 +13,7 @@ title: Unidad 1
 
 **HPC**: Cualquier  técnica computacional que soluciona un problema grande de forma más rápida que usando posiblemente sistemas simples.
 
-HPC ha tenido gran impacto sobre todas las áreas de ciencias computacionales e ingenieria en la academia, gobierno e industria.
+HPC ha tenido gran impacto sobre todas las áreas de ciencias computacionales e ingeniería en la academia, gobierno e industria.
 
 Muchos problemas han sido solucionados con técnicas de **HPC** que eran imposibles de solucionar con estaciones de trabajo individuales o computadores personales.
 
@@ -52,7 +52,7 @@ Sistemas simples con varios procesadores trabajando sobre el mismo problema
 
 <img src="_static/images/U1_6.png"/>
 
-la programación concurrente se enfoca en manejar múltiples tareas al mismo tiempo (ya sea simultáneamente o dando la ilusión de simultaneidad), la programación paralela se enfoca en la división y ejecución simultánea de tareas para resolver un problema más grande en menos tiempo.
+La programación concurrente se enfoca en manejar múltiples tareas al mismo tiempo (ya sea simultáneamente o dando la ilusión de simultaneidad), la programación paralela se enfoca en la división y ejecución simultánea de tareas para resolver un problema más grande en menos tiempo.
 
 
 ```
@@ -82,7 +82,7 @@ Middleware para comunicación transparente y explotación de recursos.
 - El objetivo final es usar recursos remotos
 - Se requieren conexiones de redes rápidas
 - El grid busca el uso eficiente de los recursos
-- Es escencial la seguridad centrada en: políticas de acceso, autenticación y autorización.
+- Es esencial la seguridad centrada en: políticas de acceso, autenticación y autorización.
 - Es importante estandarizar las aplicaciones grid.
 
 <img src="_static/images/U1_13.png"/>
@@ -97,15 +97,15 @@ Middleware para comunicación transparente y explotación de recursos.
 * Capa de red
 
 ##### Middleware
-El autentico cerebro del grid, se encarga de las siguientes funciones:
+El auténtico cerebro del grid, se encarga de las siguientes funciones:
 
-* Encontrar lugar conveniente para ejecutar la tarea solicitada por el usuario
-* optimizar el uso de recursos que se encuentren dispersos
-* organizar el acceso eficiente a los datos
-* autenticar los diferentes elementos
-* ejecutar tareas
-* monitorizar el progreso de los trabajos en ejecución
-* gestionar automáticamente la recuperación frente a fallos
+* Encontrar lugar conveniente para ejecutar la tarea solicitada por el usuario.
+* Optimizar el uso de recursos que se encuentren dispersos.
+* Organizar el acceso eficiente a los datos.
+* Autenticar los diferentes elementos.
+* Ejecutar tareas.
+* Monitorizar el progreso de los trabajos en ejecución.
+* Gestionar automáticamente la recuperación frente a fallos.
 * Notificar el fallo, culminación de la ejecución de una tarea y sus resultados.
 
 <img src="_static/images/U1_17.png"/>
