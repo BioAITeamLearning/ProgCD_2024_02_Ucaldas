@@ -37,7 +37,7 @@ Explore this book {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: https://forms.gle/QUYCqzp6zv6wWsHn7
+:link: https://docs.google.com/forms/d/e/1FAIpQLSczlmkfTyxF6AlYtuHehiB00SL3Sz1jeMx-1ZMJhvXQMPWNrw/viewform?usp=sharing
 **💬 Quiz 1**
 ^^^
 ```{image} https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png
