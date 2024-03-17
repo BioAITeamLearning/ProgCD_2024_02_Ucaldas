@@ -8,6 +8,7 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Ladda ner källfil"
 
@@ -19,10 +20,21 @@ msgstr "Växla navigering"
 
 msgid "open issue"
 msgstr "öppna problemrapport"
+=======
+msgid "Theme by the"
+msgstr "Tema av"
+
+msgid "Open an issue"
+msgstr "Öppna en problemrapport"
+
+msgid "Contents"
+msgstr "Innehåll"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Ladda ner notebook-fil"
 
+<<<<<<< HEAD
 msgid "repository"
 msgstr "repositorium"
 
@@ -31,9 +43,62 @@ msgstr "Tema av"
 
 msgid "Print to PDF"
 msgstr "Skriv ut till PDF"
+=======
+msgid "Sphinx Book Theme"
+msgstr "Sphinx Boktema"
+
+msgid "Fullscreen mode"
+msgstr "Fullskärmsläge"
+
+msgid "Edit this page"
+msgstr "Redigera den här sidan"
+
+msgid "By"
+msgstr "Av"
+
+msgid "Copyright"
+msgstr "Upphovsrätt"
+
+msgid "Source repository"
+msgstr "Källkodsrepositorium"
+
+msgid "previous page"
+msgstr "föregående sida"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
+
+msgid "next page"
+msgstr "nästa sida"
+
+msgid "Toggle navigation"
+msgstr "Växla navigering"
+
+msgid "repository"
+msgstr "repositorium"
+
+msgid "suggest edit"
+msgstr "föreslå ändring"
+
+msgid "open issue"
+msgstr "öppna problemrapport"
+
+msgid "Launch"
+msgstr "Öppna"
+
+msgid "Print to PDF"
+msgstr "Skriv ut till PDF"
+
+msgid "By the"
+msgstr "Av den"
+
+msgid "Last updated on"
+msgstr "Senast uppdaterad den"
+
+msgid "Download source file"
+msgstr "Ladda ner källfil"
 
 msgid "Download this page"
 msgstr "Ladda ner den här sidan"
+<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Upphovsrätt"
@@ -73,3 +138,5 @@ msgstr "Av den"
 
 msgid "previous page"
 msgstr "föregående sida"
+=======
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

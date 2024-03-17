@@ -52,6 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script src="../../_static/translations.js?v=efdbd0b9"></script>
+<<<<<<< HEAD
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -66,11 +67,20 @@ const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
+=======
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Unidades/Unidad_1/Tema 9 - Metodos Numericos_2024_01_4';</script>
     <link rel="index" title="Índice" href="../../genindex.html" />
     <link rel="search" title="Búsqueda" href="../../search.html" />
+    <link rel="next" title="Evaluemos lo aprendido!!" href="Evaluemos_Unidad1_10_08_2023.html" />
     <link rel="prev" title="Métodos Numéricos: Ecns Diferenciales Ordinarias" href="Tema%208%20-%20Metodos%20Numericos_2024_01_3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
@@ -229,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l2"><a class="reference internal" href="Tema%203%20-%20Pandas_10_08_2023.html">Introducción a pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tema_3_Pandas_10_08_2023.html">Introducción a pandas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Tema%205%20-%20Manejo%20de%20ficheros_10_08_2023.html">Manejo de archivos</a></li>
 
 
@@ -240,6 +250,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="Tema%208%20-%20Metodos%20Numericos_2024_01_3.html">Métodos Numéricos: Ecns Diferenciales Ordinarias</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Método de euler para ecuaciones diferenciales.</a></li>
 
+<li class="toctree-l2"><a class="reference internal" href="Evaluemos_Unidad1_10_08_2023.html">Evaluemos lo aprendido!!</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Unidad2.html">Unidad 2: Arquitecturas para computación paralela</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Unidad3.html">Unidad 3: Métricas de desempeño</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Ejercicio.html">Ejercicio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Ley%20de%20Amdahl.html">Ley de Amdahl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Metricas%20programas%20paralelos.html">Medidas de desempeño</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Recursos%20Extra.html">Recursos Extra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unidad_3/Evaluemos_Unidad3_2023.html">Evaluemos lo aprendido!!</a></li>
 </ul>
 </li>
 </ul>
@@ -516,7 +536,7 @@ y_{i+1} = y_i + mh
 <p>Hallar la integral geométrica de la función <span class="math notranslate nohighlight">\(y' = 2t\)</span> con una condicion incial y(0)=0 y un tiempo de integración de <span class="math notranslate nohighlight">\(0\)</span> hasta <span class="math notranslate nohighlight">\(0.6\)</span> y un paso de integración de <span class="math notranslate nohighlight">\(0.1\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definimos la función</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definimos la función</span>
 <span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -541,15 +561,15 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.  0.1 0.2 0.3 0.4 0.5 0.6]
-[0.00000000e+000 0.00000000e+000 6.85067826e-310 6.85067825e-310
- 6.85067826e-310 6.85067826e-310 3.16202013e-322]
+[0.00000000e+000 1.68821824e+195 2.51313104e+180 4.44032494e+252
+ 5.40026746e-310 0.00000000e+000 0.00000000e+000]
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">columnas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;it&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;yi&#39;</span><span class="p">,</span><span class="s1">&#39;yi+1&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">columnas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;it&#39;</span><span class="p">,</span><span class="s1">&#39;t&#39;</span><span class="p">,</span><span class="s1">&#39;yi&#39;</span><span class="p">,</span><span class="s1">&#39;yi+1&#39;</span><span class="p">]</span>
 <span class="n">tabla</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">columnas</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
   <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">h</span> <span class="o">*</span> <span class="n">dy</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">t</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]})</span>
@@ -561,9 +581,11 @@ y_{i+1} = y_i + mh
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-b344cb86-4e91-40a2-a091-46cdf2b86497" class="colab-df-container">
-    <div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\ricar\AppData\Local\Temp\ipykernel_9580\3804453467.py:6: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  tabla = pd.concat([tabla,nueva_fila], ignore_index=True)
+</pre></div>
+</div>
+<div class="output text_html"><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -625,220 +647,11 @@ y_{i+1} = y_i + mh
     </tr>
   </tbody>
 </table>
-</div>
-    <div class="colab-df-buttons">
-
-  <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b344cb86-4e91-40a2-a091-46cdf2b86497')"
-            title="Convert this dataframe to an interactive table."
-            style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
-    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
-  </svg>
-    </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-    <script>
-      const buttonEl =
-        document.querySelector('#df-b344cb86-4e91-40a2-a091-46cdf2b86497 button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b344cb86-4e91-40a2-a091-46cdf2b86497');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    </script>
-  </div>
-
-
-<div id="df-9978a243-afaf-4531-a0b1-9837bd66dd00">
-  <button class="colab-df-quickchart" onclick="quickchart('df-9978a243-afaf-4531-a0b1-9837bd66dd00')"
-            title="Suggest charts"
-            style="display:none;">
-
-<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-     width="24px">
-    <g>
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-    </g>
-</svg>
-  </button>
-
-<style>
-  .colab-df-quickchart {
-      --bg-color: #E8F0FE;
-      --fill-color: #1967D2;
-      --hover-bg-color: #E2EBFA;
-      --hover-fill-color: #174EA6;
-      --disabled-fill-color: #AAA;
-      --disabled-bg-color: #DDD;
-  }
-
-  [theme=dark] .colab-df-quickchart {
-      --bg-color: #3B4455;
-      --fill-color: #D2E3FC;
-      --hover-bg-color: #434B5C;
-      --hover-fill-color: #FFFFFF;
-      --disabled-bg-color: #3B4455;
-      --disabled-fill-color: #666;
-  }
-
-  .colab-df-quickchart {
-    background-color: var(--bg-color);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    fill: var(--fill-color);
-    height: 32px;
-    padding: 0;
-    width: 32px;
-  }
-
-  .colab-df-quickchart:hover {
-    background-color: var(--hover-bg-color);
-    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
-    fill: var(--button-hover-fill-color);
-  }
-
-  .colab-df-quickchart-complete:disabled,
-  .colab-df-quickchart-complete:disabled:hover {
-    background-color: var(--disabled-bg-color);
-    fill: var(--disabled-fill-color);
-    box-shadow: none;
-  }
-
-  .colab-df-spinner {
-    border: 2px solid var(--fill-color);
-    border-color: transparent;
-    border-bottom-color: var(--fill-color);
-    animation:
-      spin 1s steps(1) infinite;
-  }
-
-  @keyframes spin {
-    0% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-      border-left-color: var(--fill-color);
-    }
-    20% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    30% {
-      border-color: transparent;
-      border-left-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-      border-right-color: var(--fill-color);
-    }
-    40% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-top-color: var(--fill-color);
-    }
-    60% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-    }
-    80% {
-      border-color: transparent;
-      border-right-color: var(--fill-color);
-      border-bottom-color: var(--fill-color);
-    }
-    90% {
-      border-color: transparent;
-      border-bottom-color: var(--fill-color);
-    }
-  }
-</style>
-
-  <script>
-    async function quickchart(key) {
-      const quickchartButtonEl =
-        document.querySelector('#' + key + ' button');
-      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
-      quickchartButtonEl.classList.add('colab-df-spinner');
-      try {
-        const charts = await google.colab.kernel.invokeFunction(
-            'suggestCharts', [key], {});
-      } catch (error) {
-        console.error('Error during call to suggestCharts:', error);
-      }
-      quickchartButtonEl.classList.remove('colab-df-spinner');
-      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
-    }
-    (() => {
-      let quickchartButtonEl =
-        document.querySelector('#df-9978a243-afaf-4531-a0b1-9837bd66dd00 button');
-      quickchartButtonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-    })();
-  </script>
-</div>
-    </div>
-  </div>
-</div></div>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
@@ -849,13 +662,13 @@ y_{i+1} = y_i + mh
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7e1c4f385e40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1f5bb1e7730&gt;
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 640x480 with 0 Axes&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 432x288 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="../../_images/045e640fe6b118c72375982fc7703977c91daa2d72e96096ad084dbbd344d6d4.png" src="../../_images/045e640fe6b118c72375982fc7703977c91daa2d72e96096ad084dbbd344d6d4.png" />
+<img alt="../../_images/63dca5c0f510e1a182930f7c8f8780b530bdaa61773be20c11a28677044193a2.png" src="../../_images/63dca5c0f510e1a182930f7c8f8780b530bdaa61773be20c11a28677044193a2.png" />
 </div>
 </div>
 <section id="circuito-rlc-analisis-analitico">
@@ -869,7 +682,7 @@ y_{i+1} = y_i + mh
 <p>Definamos las ecuaciones del sistema en <code class="docutils literal notranslate"><span class="pre">sympy</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">t</span><span class="p">,</span> <span class="n">vi</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">C</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;t vi L R C&quot;</span><span class="p">)</span>
 <span class="n">C1</span><span class="p">,</span><span class="n">C2</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;C1 C2&quot;</span><span class="p">)</span>
@@ -890,7 +703,7 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asumimos valores de R,L y C = 1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asumimos valores de R,L y C = 1</span>
 
 <span class="n">expr1</span><span class="o">=</span><span class="n">expr1</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">vi</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">expr1</span>
@@ -904,7 +717,7 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expr2</span> <span class="o">=</span> <span class="n">Eq</span><span class="p">(</span><span class="n">dvdt</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">C</span><span class="p">)</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expr2</span> <span class="o">=</span> <span class="n">Eq</span><span class="p">(</span><span class="n">dvdt</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">C</span><span class="p">)</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 <span class="n">expr2</span>
 </pre></div>
 </div>
@@ -916,7 +729,7 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asumimos valores de R,L y C = 1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asumimos valores de R,L y C = 1</span>
 
 <span class="n">expr2</span><span class="o">=</span><span class="n">expr2</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">vi</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">expr2</span>
@@ -930,20 +743,19 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">s</span><span class="o">=</span><span class="n">dsolve</span><span class="p">([</span><span class="n">expr1</span><span class="p">,</span><span class="n">expr2</span><span class="p">])</span>
 <span class="n">s</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle \left[ i{\left(t \right)} = - \left(\frac{C_{1}}{2} + \frac{\sqrt{3} C_{2}}{2}\right) e^{- \frac{t}{2}} \cos{\left(\frac{\sqrt{3} t}{2} \right)} - \left(\frac{\sqrt{3} C_{1}}{2} - \frac{C_{2}}{2}\right) e^{- \frac{t}{2}} \sin{\left(\frac{\sqrt{3} t}{2} \right)}, \  v{\left(t \right)} = C_{1} e^{- \frac{t}{2}} \cos{\left(\frac{\sqrt{3} t}{2} \right)} - C_{2} e^{- \frac{t}{2}} \sin{\left(\frac{\sqrt{3} t}{2} \right)} + \sin^{2}{\left(\frac{\sqrt{3} t}{2} \right)} + \cos^{2}{\left(\frac{\sqrt{3} t}{2} \right)}\right]\]</div>
+<img alt="../../_images/7e324293c86f261d2f6344f3ccc869a338a6cd3a8e6a98aa4c945f36cf209ae8.png" src="../../_images/7e324293c86f261d2f6344f3ccc869a338a6cd3a8e6a98aa4c945f36cf209ae8.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vamos a hallar los valores de las ctes C1 y C2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Vamos a hallar los valores de las ctes C1 y C2</span>
 <span class="n">eq1</span> <span class="o">=</span> <span class="n">Eq</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">t</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span><span class="o">.</span><span class="n">evalf</span><span class="p">(),</span> <span class="mf">0.1</span><span class="p">)</span>
 <span class="n">eq2</span> <span class="o">=</span> <span class="n">Eq</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">t</span><span class="p">:</span><span class="mi">0</span><span class="p">})</span><span class="o">.</span><span class="n">evalf</span><span class="p">(),</span> <span class="mf">0.1</span><span class="p">)</span>
 <span class="n">sol</span> <span class="o">=</span> <span class="n">solve</span><span class="p">([</span><span class="n">eq1</span><span class="p">,</span><span class="n">eq2</span><span class="p">],</span> <span class="p">[</span><span class="n">C1</span><span class="p">,</span><span class="n">C2</span><span class="p">])</span>
@@ -959,29 +771,27 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">eq1</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eq1</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle - 0.5 C_{1} - 0.866025403784439 C_{2} = 0.1\]</div>
+<img alt="../../_images/327865f75b1558231c9e6f2c9584d7a4c6a78d186d76aaf72a35e0a5d728298a.png" src="../../_images/327865f75b1558231c9e6f2c9584d7a4c6a78d186d76aaf72a35e0a5d728298a.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle - \left(\frac{C_{1}}{2} + \frac{\sqrt{3} C_{2}}{2}\right) e^{- \frac{t}{2}} \cos{\left(\frac{\sqrt{3} t}{2} \right)} - \left(\frac{\sqrt{3} C_{1}}{2} - \frac{C_{2}}{2}\right) e^{- \frac{t}{2}} \sin{\left(\frac{\sqrt{3} t}{2} \right)}\]</div>
+<img alt="../../_images/c8c7b5c4915231300c387cda0f9a0e0368507a6bdcbbcafa0e225c558406440c.png" src="../../_images/c8c7b5c4915231300c387cda0f9a0e0368507a6bdcbbcafa0e225c558406440c.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">## Generemos dos funciones que permitan reemplazar los valores de t dados para graficar las soluciones.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Generemos dos funciones que permitan reemplazar los valores de t dados para graficar las soluciones.</span>
 
 <span class="n">e1</span> <span class="o">=</span> <span class="n">lambdify</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">sol</span><span class="p">),</span><span class="s1">&#39;numpy&#39;</span><span class="p">)</span>
 <span class="n">e2</span> <span class="o">=</span> <span class="n">lambdify</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">rhs</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">sol</span><span class="p">),</span><span class="s1">&#39;numpy&#39;</span><span class="p">)</span>
@@ -991,14 +801,14 @@ y_{i+1} = y_i + mh
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_vals</span><span class="p">,</span> <span class="n">e1</span><span class="p">(</span><span class="n">t_vals</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_vals</span><span class="p">,</span> <span class="n">e1</span><span class="p">(</span><span class="n">t_vals</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;tiempo&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;i(t)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -1006,12 +816,12 @@ y_{i+1} = y_i + mh
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/79d348bc6717d778f6b1cf6befa9fe0821455d35d3b3cc6f00a63129438948e6.png" src="../../_images/79d348bc6717d778f6b1cf6befa9fe0821455d35d3b3cc6f00a63129438948e6.png" />
+<img alt="../../_images/603be7f94ddaf89b94df7a9899fe50501d8e394090662148375c7e78966d8ec5.png" src="../../_images/603be7f94ddaf89b94df7a9899fe50501d8e394090662148375c7e78966d8ec5.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_vals</span><span class="p">,</span> <span class="n">e2</span><span class="p">(</span><span class="n">t_vals</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_vals</span><span class="p">,</span> <span class="n">e2</span><span class="p">(</span><span class="n">t_vals</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;tiempo&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v(t)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -1019,13 +829,13 @@ y_{i+1} = y_i + mh
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/131505edb294610bc47e34111e7f1e8248ac7c5440dded63690e3e9073eb6a74.png" src="../../_images/131505edb294610bc47e34111e7f1e8248ac7c5440dded63690e3e9073eb6a74.png" />
+<img alt="../../_images/d4518efde5de83128691be75b799cea258cbbfe2cdc82b7a10cd8820f81c754b.png" src="../../_images/d4518efde5de83128691be75b799cea258cbbfe2cdc82b7a10cd8820f81c754b.png" />
 </div>
 </div>
 <p>las gráficas para la corriente <span class="math notranslate nohighlight">\(i(t)\)</span> y el voltaje <span class="math notranslate nohighlight">\(v(t)\)</span> en función del tiempo para el circuito RLC analizado. Como puedes ver, ambas funciones muestran un comportamiento oscilatorio amortiguado, que es típico en este tipo de circuitos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">euler_method_system</span><span class="p">(</span><span class="n">funcs</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t_range</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">euler_method_system</span><span class="p">(</span><span class="n">funcs</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">t_range</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Método de Euler para un sistema de ecuaciones diferenciales.</span>
 
@@ -1046,7 +856,7 @@ y_{i+1} = y_i + mh
     <span class="k">return</span> <span class="n">t_values</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_values</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
 
 <span class="c1"># Funciones para el sistema de ecuaciones diferenciales</span>
-<span class="k">def</span> <span class="nf">func_i</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">func_i</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span> <span class="o">-</span> <span class="n">v</span>
 
 <span class="k">def</span> <span class="nf">func_v</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
@@ -1095,7 +905,7 @@ y_{i+1} = y_i + mh
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/b5f0b420d8b20a542cb8dedb0131eefac7b3d0fd522ad9dfbb75fbd2ade88cc2.png" src="../../_images/b5f0b420d8b20a542cb8dedb0131eefac7b3d0fd522ad9dfbb75fbd2ade88cc2.png" />
+<img alt="../../_images/f4379409e0131d01b76ebd838d80c39fc571eccaf960b95166ec0270881643a3.png" src="../../_images/f4379409e0131d01b76ebd838d80c39fc571eccaf960b95166ec0270881643a3.png" />
 </div>
 </div>
 </section>
@@ -1145,6 +955,18 @@ y_{i+1} = y_i + mh
         <p class="prev-next-title">Métodos Numéricos: Ecns Diferenciales Ordinarias</p>
       </div>
     </a>
+<<<<<<< HEAD
+=======
+    <a class="right-next"
+       href="Evaluemos_Unidad1_10_08_2023.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Evaluemos lo aprendido!!</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 </div>
                 </footer>
               

@@ -8,6 +8,7 @@ msgstr ""
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Laadige alla lähtefail"
 
@@ -19,10 +20,21 @@ msgstr "Lülita navigeerimine sisse"
 
 msgid "open issue"
 msgstr "avatud küsimus"
+=======
+msgid "Theme by the"
+msgstr "Teema"
+
+msgid "Open an issue"
+msgstr "Avage probleem"
+
+msgid "Contents"
+msgstr "Sisu"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Laadige sülearvuti fail alla"
 
+<<<<<<< HEAD
 msgid "repository"
 msgstr "hoidla"
 
@@ -31,9 +43,62 @@ msgstr "Teema"
 
 msgid "Print to PDF"
 msgstr "Prindi PDF-i"
+=======
+msgid "Sphinx Book Theme"
+msgstr "Sfinksiraamatu teema"
+
+msgid "Fullscreen mode"
+msgstr "Täisekraanirežiim"
+
+msgid "Edit this page"
+msgstr "Muutke seda lehte"
+
+msgid "By"
+msgstr "Kõrval"
+
+msgid "Copyright"
+msgstr "Autoriõigus"
+
+msgid "Source repository"
+msgstr "Allikahoidla"
+
+msgid "previous page"
+msgstr "eelmine leht"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
+
+msgid "next page"
+msgstr "järgmine leht"
+
+msgid "Toggle navigation"
+msgstr "Lülita navigeerimine sisse"
+
+msgid "repository"
+msgstr "hoidla"
+
+msgid "suggest edit"
+msgstr "soovita muuta"
+
+msgid "open issue"
+msgstr "avatud küsimus"
+
+msgid "Launch"
+msgstr "Käivitage"
+
+msgid "Print to PDF"
+msgstr "Prindi PDF-i"
+
+msgid "By the"
+msgstr "Autor"
+
+msgid "Last updated on"
+msgstr "Viimati uuendatud"
+
+msgid "Download source file"
+msgstr "Laadige alla lähtefail"
 
 msgid "Download this page"
 msgstr "Laadige see leht alla"
+<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Autoriõigus"
@@ -73,3 +138,5 @@ msgstr "Autor"
 
 msgid "previous page"
 msgstr "eelmine leht"
+=======
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

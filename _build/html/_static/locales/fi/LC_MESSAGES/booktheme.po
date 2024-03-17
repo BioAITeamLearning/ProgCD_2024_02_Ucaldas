@@ -8,6 +8,7 @@ msgstr ""
 "Language: fi\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Lataa lähdetiedosto"
 
@@ -19,10 +20,21 @@ msgstr "Vaihda navigointia"
 
 msgid "open issue"
 msgstr "avoin ongelma"
+=======
+msgid "Theme by the"
+msgstr "Teeman tekijä"
+
+msgid "Open an issue"
+msgstr "Avaa ongelma"
+
+msgid "Contents"
+msgstr "Sisällys"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Lataa muistikirjatiedosto"
 
+<<<<<<< HEAD
 msgid "repository"
 msgstr "arkisto"
 
@@ -31,9 +43,62 @@ msgstr "Teeman tekijä"
 
 msgid "Print to PDF"
 msgstr "Tulosta PDF-tiedostoon"
+=======
+msgid "Sphinx Book Theme"
+msgstr "Sphinx-kirjan teema"
+
+msgid "Fullscreen mode"
+msgstr "Koko näytön tila"
+
+msgid "Edit this page"
+msgstr "Muokkaa tätä sivua"
+
+msgid "By"
+msgstr "Tekijä"
+
+msgid "Copyright"
+msgstr "Tekijänoikeus"
+
+msgid "Source repository"
+msgstr "Lähteen arkisto"
+
+msgid "previous page"
+msgstr "Edellinen sivu"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
+
+msgid "next page"
+msgstr "seuraava sivu"
+
+msgid "Toggle navigation"
+msgstr "Vaihda navigointia"
+
+msgid "repository"
+msgstr "arkisto"
+
+msgid "suggest edit"
+msgstr "ehdottaa muokkausta"
+
+msgid "open issue"
+msgstr "avoin ongelma"
+
+msgid "Launch"
+msgstr "Tuoda markkinoille"
+
+msgid "Print to PDF"
+msgstr "Tulosta PDF-tiedostoon"
+
+msgid "By the"
+msgstr "Mukaan"
+
+msgid "Last updated on"
+msgstr "Viimeksi päivitetty"
+
+msgid "Download source file"
+msgstr "Lataa lähdetiedosto"
 
 msgid "Download this page"
 msgstr "Lataa tämä sivu"
+<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Tekijänoikeus"
@@ -73,3 +138,5 @@ msgstr "Mukaan"
 
 msgid "previous page"
 msgstr "Edellinen sivu"
+=======
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

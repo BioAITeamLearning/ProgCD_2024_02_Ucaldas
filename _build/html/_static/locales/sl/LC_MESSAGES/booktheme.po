@@ -8,6 +8,7 @@ msgstr ""
 "Language: sl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Prenesite izvorno datoteko"
 
@@ -19,10 +20,21 @@ msgstr "Preklopi navigacijo"
 
 msgid "open issue"
 msgstr "odprto vprašanje"
+=======
+msgid "Theme by the"
+msgstr "Tema avtorja"
+
+msgid "Open an issue"
+msgstr "Odprite številko"
+
+msgid "Contents"
+msgstr "Vsebina"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Prenesite datoteko zvezka"
 
+<<<<<<< HEAD
 msgid "repository"
 msgstr "odlagališče"
 
@@ -31,9 +43,62 @@ msgstr "Tema avtorja"
 
 msgid "Print to PDF"
 msgstr "Natisni v PDF"
+=======
+msgid "Sphinx Book Theme"
+msgstr "Tema knjige Sphinx"
+
+msgid "Fullscreen mode"
+msgstr "Celozaslonski način"
+
+msgid "Edit this page"
+msgstr "Uredite to stran"
+
+msgid "By"
+msgstr "Avtor"
+
+msgid "Copyright"
+msgstr "avtorske pravice"
+
+msgid "Source repository"
+msgstr "Izvorno skladišče"
+
+msgid "previous page"
+msgstr "Prejšnja stran"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
+
+msgid "next page"
+msgstr "Naslednja stran"
+
+msgid "Toggle navigation"
+msgstr "Preklopi navigacijo"
+
+msgid "repository"
+msgstr "odlagališče"
+
+msgid "suggest edit"
+msgstr "predlagajte urejanje"
+
+msgid "open issue"
+msgstr "odprto vprašanje"
+
+msgid "Launch"
+msgstr "Kosilo"
+
+msgid "Print to PDF"
+msgstr "Natisni v PDF"
+
+msgid "By the"
+msgstr "Avtor"
+
+msgid "Last updated on"
+msgstr "Nazadnje posodobljeno dne"
+
+msgid "Download source file"
+msgstr "Prenesite izvorno datoteko"
 
 msgid "Download this page"
 msgstr "Prenesite to stran"
+<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "avtorske pravice"
@@ -73,3 +138,5 @@ msgstr "Avtor"
 
 msgid "previous page"
 msgstr "Prejšnja stran"
+=======
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24

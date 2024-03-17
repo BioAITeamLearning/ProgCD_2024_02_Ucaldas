@@ -10,25 +10,25 @@ chapters:
   - file: "Unidades/Unidad_1/Tema 1 - TiposDeDatos Condicionales Ciclos Colecciones Funciones_10_08_2023"
   - file: "Unidades/Unidad_1/Tema_1_1_2_Multiples_Lenguajes_en_Colab_17_08_2023"
   - file: "Unidades/Unidad_1/Tema 2 - Arreglos_10_08_2023"
-  - file: "Unidades/Unidad_1/Tema 3 - Pandas_10_08_2023"
+  - file: "Unidades/Unidad_1/Tema_3_Pandas_10_08_2023"
   - file: "Unidades/Unidad_1/Tema 5 - Manejo de ficheros_10_08_2023"
   - file: "Unidades/Unidad_1/Tema 4 - Analisis numerico y Calculo simbolico con Sympy_10_08_2023"
   - file: "Unidades/Unidad_1/Tema 6 - Metodos Numericos_2024_01_1"
   - file: "Unidades/Unidad_1/Tema 7 - Metodos Numericos_2024_01_2"
   - file: "Unidades/Unidad_1/Tema 8 - Metodos Numericos_2024_01_3"
   - file: "Unidades/Unidad_1/Tema 9 - Metodos Numericos_2024_01_4"
-  #- file: "Unidades/Unidad_1/Evaluemos_Unidad1_10_08_2023"
-#  
-#- file: Unidad2
-#
-#- file: Unidad3
-#  sections:
-#  - file: "Unidades/Unidad_3/Ejercicio"
-#  - file: "Unidades/Unidad_3/Ley de Amdahl"
-#  - file: "Unidades/Unidad_3/Metricas programas paralelos"
-#  - file: "Unidades/Unidad_3/Recursos Extra"
-#  - file: "Unidades/Unidad_3/Evaluemos_Unidad3_2023"
-#
+  - file: "Unidades/Unidad_1/Evaluemos_Unidad1_10_08_2023"
+ 
+- file: Unidad2
+
+- file: Unidad3
+  sections:
+  - file: "Unidades/Unidad_3/Ejercicio"
+  - file: "Unidades/Unidad_3/Ley de Amdahl"
+  - file: "Unidades/Unidad_3/Metricas programas paralelos"
+  - file: "Unidades/Unidad_3/Recursos Extra"
+  - file: "Unidades/Unidad_3/Evaluemos_Unidad3_2023"
+
 #- file: Unidad4
 #  sections:
 #  - file: "Unidades/Unidad_4/HilosPython1.5"

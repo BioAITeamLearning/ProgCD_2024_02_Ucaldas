@@ -8,6 +8,7 @@ msgstr ""
 "Language: lv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+<<<<<<< HEAD
 msgid "Download source file"
 msgstr "Lejupielādēt avota failu"
 
@@ -19,10 +20,21 @@ msgstr "Pārslēgt navigāciju"
 
 msgid "open issue"
 msgstr "atklāts jautājums"
+=======
+msgid "Theme by the"
+msgstr "Autora tēma"
+
+msgid "Open an issue"
+msgstr "Atveriet problēmu"
+
+msgid "Contents"
+msgstr "Saturs"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
 
 msgid "Download notebook file"
 msgstr "Lejupielādēt piezīmju grāmatiņu"
 
+<<<<<<< HEAD
 msgid "repository"
 msgstr "krātuve"
 
@@ -31,9 +43,62 @@ msgstr "Autora tēma"
 
 msgid "Print to PDF"
 msgstr "Drukāt PDF formātā"
+=======
+msgid "Sphinx Book Theme"
+msgstr "Sfinksa grāmatas tēma"
+
+msgid "Fullscreen mode"
+msgstr "Pilnekrāna režīms"
+
+msgid "Edit this page"
+msgstr "Rediģēt šo lapu"
+
+msgid "By"
+msgstr "Autors"
+
+msgid "Copyright"
+msgstr "Autortiesības"
+
+msgid "Source repository"
+msgstr "Avota krātuve"
+
+msgid "previous page"
+msgstr "iepriekšējā lapa"
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
+
+msgid "next page"
+msgstr "nākamā lapaspuse"
+
+msgid "Toggle navigation"
+msgstr "Pārslēgt navigāciju"
+
+msgid "repository"
+msgstr "krātuve"
+
+msgid "suggest edit"
+msgstr "ieteikt rediģēt"
+
+msgid "open issue"
+msgstr "atklāts jautājums"
+
+msgid "Launch"
+msgstr "Uzsākt"
+
+msgid "Print to PDF"
+msgstr "Drukāt PDF formātā"
+
+msgid "By the"
+msgstr "Ar"
+
+msgid "Last updated on"
+msgstr "Pēdējoreiz atjaunināts"
+
+msgid "Download source file"
+msgstr "Lejupielādēt avota failu"
 
 msgid "Download this page"
 msgstr "Lejupielādējiet šo lapu"
+<<<<<<< HEAD
 
 msgid "Copyright"
 msgstr "Autortiesības"
@@ -73,3 +138,5 @@ msgstr "Ar"
 
 msgid "previous page"
 msgstr "iepriekšējā lapa"
+=======
+>>>>>>> ae82c56bf1430b5a8109e248487012cf59de3b24
