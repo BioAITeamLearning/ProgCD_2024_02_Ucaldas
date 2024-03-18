@@ -151,10 +151,11 @@ Ahora que tal si implementamos un sistema de chat con la herramienta bien conoci
 - **GPTChatClient.ipynb**
 
 ```
-
+<!--
 ### Tarea Unidad 5
 ```{note}
 
 Realizar la **Tarea Unidad 5** de esta Unidad 5.
 
 ```
+-->
