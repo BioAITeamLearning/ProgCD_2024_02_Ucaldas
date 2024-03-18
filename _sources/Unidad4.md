@@ -1,7 +1,7 @@
 ---
 title: Unidad 4
 ---
-# Unidad 4: Manejo de hilos y procesos
+# Unidad 4: Hilos y Sockets
 
 ## Contenido de la unidad
 
@@ -156,6 +156,7 @@ La forma más sencilla de usar un subproceso es **instanciarlo** con una **funci
 Analizar el notebook llamado **HilosPython1.5.ipynb**
 
 ```
+<!--
 
 ### Tarea 1
 ```{note}
@@ -180,3 +181,4 @@ Realizar la **Tarea 2** de esta Unidad 4.
 
 ```
 
+-->
