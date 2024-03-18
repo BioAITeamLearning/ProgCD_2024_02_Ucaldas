@@ -153,15 +153,7 @@ La forma más sencilla de usar un subproceso es **instanciarlo** con una **funci
 ```{note}
 **Time code**
 
-Analizar el notebook llamado **HilosPython1.5.ipynb**
-
-```
-<!--
-
-### Tarea 1
-```{note}
-
-Realizar la **Tarea 1** de esta Unidad 4.
+Analizar el notebook llamado **Hilos_en_Python.ipynb**
 
 ```
 
@@ -172,8 +164,19 @@ Asegurarse de haber realizado correctamente la configuración del entorno con Ja
 **Time code**
 
 Analizar el notebook llamado **HilosJavaBasico.ipynb**
+```
+<!--
+
+### Tarea 1
+```{note}
+
+Realizar la **Tarea 1** de esta Unidad 4.
 
 ```
+
+
+
+
 ### Tarea 2
 ```{note}
 
