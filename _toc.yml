@@ -24,7 +24,7 @@ chapters:
 - file: Unidad3
   sections:
   - file: "Unidades/Unidad_3/Ejercicio"
-  - file: "Unidades/Unidad_3/Ley de Amdahl"
+  - file: "Unidades/Unidad_3/Ley_de_Amdahl_Gustafson_Ejercicio"
   - file: "Unidades/Unidad_3/Metricas programas paralelos"
   - file: "Unidades/Unidad_3/Recursos Extra"
   #- file: "Unidades/Unidad_3/Evaluemos_Unidad3_2023"
