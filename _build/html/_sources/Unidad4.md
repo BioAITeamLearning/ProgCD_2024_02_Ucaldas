@@ -69,7 +69,7 @@ Un proceso puede constar de varios hilos paralelos, y la creación y gestión de
 
 ```
 
-### Ventajas de los hilos
+### Desventajas de los hilos
 - **Problemas de sincronización** pueden ocurrir cuando se accede y modifica datos compartidos entre hilos, lo que puede causar condiciones de carrera y bloqueos si no se manejan adecuadamente.
 
 - En CPython, el **Global Interpreter Lock (GIL) limita el aprovechamiento del paralelismo real** en sistemas con múltiples núcleos de procesador, aunque la concurrencia sigue siendo posible.
