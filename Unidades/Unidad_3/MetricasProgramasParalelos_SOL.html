@@ -784,7 +784,24 @@ s = f + N(1 - f) = N - fx(N - 1)
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### TU CÓDIGO VA AQUÍ</span>
+<span class="c1"># Corrección del cálculo según la Ley de Amdahl</span>
+<span class="c1"># La fórmula correcta para resolver para p es:</span>
+<span class="c1"># Aceleración = 1 / ((1 - p) + p / n)</span>
+<span class="c1"># Despejando p de la fórmula</span>
 
+<span class="n">aceleracion</span> <span class="o">=</span> <span class="mf">2.3</span>
+<span class="n">procesadores</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="c1"># La ecuación correcta es:</span>
+<span class="c1"># p = (1 - (1 / aceleracion)) / (1 - 1 / procesadores)</span>
+
+<span class="c1"># Corrigiendo el cálculo</span>
+<span class="n">p_correcto</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span> <span class="o">/</span> <span class="n">aceleracion</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">procesadores</span><span class="p">)</span>
+
+<span class="c1"># Convertir a porcentaje</span>
+<span class="n">p_porcentaje_correcto</span> <span class="o">=</span> <span class="n">p_correcto</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="n">p_porcentaje_correcto</span>
 <span class="c1">### HASTA AQUÍ</span>
 </pre></div>
 </div>
