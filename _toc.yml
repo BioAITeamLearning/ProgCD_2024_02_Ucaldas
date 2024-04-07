@@ -49,7 +49,7 @@ chapters:
   - file: "Unidades/Unidad_5/GPTChatClient"
   - file: "Unidades/Unidad_5/Tarea Unidad 5"
 
-#- file: Unidad6
+- file: Unidad6
 
 #- file: Unidad7
 #  sections:
