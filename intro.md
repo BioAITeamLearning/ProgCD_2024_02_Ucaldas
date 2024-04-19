@@ -143,18 +143,7 @@ Métricas de desempeño
 **Unidad 4 🧵**
 ^^^
 
-Manejo de hilos y procesos
-:::
-
-:::{grid-item-card}
-:link: Unidad5
-:link-type: doc
-:class-header: bg-light
-
-**Unidad 5 🚦**
-^^^
-
-Hilos 2.0 y Sockets
+Manejo de hilos y sockets
 :::
 
 :::{grid-item-card}
@@ -162,10 +151,23 @@ Hilos 2.0 y Sockets
 :link-type: doc
 :class-header: bg-light
 
-**Unidad 6 💻**
+**Unidad 5 🚦**
 ^^^
 
 Infraestructura de cluster
+:::
+
+:::{grid-item-card}
+:link: Unidad6_5
+:link-type: doc
+:class-header: bg-light
+
+**Unidad 6 💻**
+^^^
+
+
+Concurrencia para desarrollo web
+
 :::
 
 :::{grid-item-card}
