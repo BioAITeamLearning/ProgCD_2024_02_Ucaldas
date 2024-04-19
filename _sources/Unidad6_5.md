@@ -185,3 +185,24 @@ Por ejemplo:
 * Visión por computadora: una imagen está compuesta de millones de píxeles, cada píxel tiene 3 valores / colores, procesamiento que normalmente requiere calcular algo en esos píxeles, todo al mismo tiempo.
 * Machine Learning: normalmente requiere muchas multiplicaciones de "matrices" y "vectores". Imagina en una enorme hoja de cálculo con números y tener que multiplicarlos todos al mismo tiempo.
 * Deep Learning: este es un subcampo de Machine Learning, por lo tanto, aplica lo mismo. Es solo que no hay una sola hoja de cálculo de números para multiplicar, sino un gran conjunto de ellas, y en muchos casos, usa un procesador especial para construir y / o usar esos modelos.
+
+## Repositorio con códigos de la sesión.
+
+::::{card-carousel} 1
+
+:::{card}
+:margin: 3
+:class-body: text-center
+:class-header: bg-light text-center
+:link: https://github.com/johanpina/concurrency_parallelism
+**💬 Repositorio de apoyo**
+^^^
+```{image} https://banner2.cleanpng.com/20180331/udw/kisspng-social-media-github-computer-icons-logo-github-5ac0188083c4f5.8572681115225386245397.jpg
+:height: 100
+```
+
+Repositorio con ejemplos de concurrencia y paralelismo en Python.
++++
+Explore this repo {fas}`arrow-right`
+:::
+::::
