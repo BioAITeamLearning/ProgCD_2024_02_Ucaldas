@@ -6,7 +6,7 @@ El siguiente taller debe ser resuelto individualmente
 Para la entrega, debe enviar un (1) solo notebook con todos los ejercicios
 Cada celda debe contener la solución de un punto del taller. Todo debe estar debidamente comentariado y demarcado con secciones markdown.
 
-El taller debe tener el siguiente nombre: **Concurrente_Taller_OpenMP_Multiprocessing_NombreApellido_2023_03**
+El taller debe tener el siguiente nombre: El taller debe tener el siguiente nombre: **Concurrente_Taller_OpenMP_Multiprocessing_NombreApellido_2024_01_G1**
 
 ::::{card-carousel} 1
 
