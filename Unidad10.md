@@ -68,7 +68,7 @@ Ver el siguiente recurso:
 ```{tip}
 Ver el Notebook: `PyCUDA_multiplicar_sumar_elementos.ipynb`
 
-O acceder a el desde <a href="https://colab.research.google.com/drive/1EiUxG4rnsWkeIhGUOwS9r32VaboMDX1r?usp=sharing" target="_blank">PyCUDA_multiplicar_sumar_elementos_working.ipynb</a>
+O acceder a el desde <a href="https://colab.research.google.com/drive/1vm8jyD1DNf3zgS_kEIUU6FpXC1J0Xjpq?usp=sharing" target="_blank">PyCUDA_multiplicar_sumar_elementos_working.ipynb</a>
 
 ```
 
@@ -77,7 +77,7 @@ O acceder a el desde <a href="https://colab.research.google.com/drive/1EiUxG4rns
 ```{tip}
 Ver el Notebook: `PyCUDA_multiplicar_matrices.ipynb`
 
-O acceder a el desde <a href="https://colab.research.google.com/drive/18GRsNQOXEYzYQ4vm5_DEPkMTjLfgL2IK?usp=sharing" target="_blank">PyCUDA_multiplicar_sumar_elementos_working.ipynb</a>
+O acceder a el desde <a href="https://colab.research.google.com/drive/1hpG_DpJN_Uax4_1yjgFNjG-_9YJU1397?usp=sharing" target="_blank">PyCUDA_multiplicar_matrices_working.ipynb</a>
 
 ```
 
@@ -86,7 +86,7 @@ O acceder a el desde <a href="https://colab.research.google.com/drive/18GRsNQOXE
 ```{tip}
 Ver el Notebook: `Stable_Diffusion_GPU_vs_CPU.ipynb`
 
-O acceder a el desde <a href="https://colab.research.google.com/drive/1oSEHmtCxiJ_zRnqwfQiqeBeAQ_49O9Vb?usp=sharing" target="_blank">Stable_Diffusion_GPU_vs_CPU_working.ipynb</a>
+O acceder a el desde <a href="https://colab.research.google.com/drive/1mG2uJrREUsv6uLVUIMbg3tM7VViv9MeU?usp=sharing" target="_blank">Stable_Diffusion_GPU_vs_CPU_working.ipynb</a>
 
 ```
 

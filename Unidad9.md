@@ -124,7 +124,7 @@ pip install mpi4py
 - Cada proceso en la ejecución de MPI corre el mismo binario compilado y recibe las mismas instrucciones.
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `1-HolaMundoConMPI.py`
 
@@ -149,7 +149,7 @@ pip install mpi4py
 - Para enviar datos, se utiliza la función comm.send(), especificando el dato y el proceso receptor. Para recibir datos, se usa la función comm.recv(), indicando el proceso emisor.
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `2-ComunicacionPuntoAPunto.py`
 
@@ -170,7 +170,7 @@ pip install mpi4py
 - **Función Sendrecv**: unifica el envío y recepción de mensajes en una única llamada, evitando el interbloqueo.
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `3-EvitarProblemasDePuntoMuerto.py`
 
@@ -193,7 +193,7 @@ pip install mpi4py
 Transmisión de datos del proceso 0 a los procesos 1, 2, 3 y 4.
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `5-ComunicacionColectivaBroadcast.py`
 
@@ -208,7 +208,7 @@ Transmisión de datos del proceso 0 a los procesos 1, 2, 3 y 4.
 Dispersión de datos del proceso 0 a los procesos 1, 2, 3, 4
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `6-ComunicacionColectivaScatter.py`
 
@@ -223,7 +223,7 @@ Dispersión de datos del proceso 0 a los procesos 1, 2, 3, 4
 Recopilación de datos de los procesos 1, 2, 3, 4
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `7-ComunicacionColectivaGather.py`
 
@@ -238,7 +238,7 @@ Recopilación de datos de los procesos 1, 2, 3, 4
 La comunicación colectiva Alltoall
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `8-ComunicacionColectivaAllToAll.py`
 
@@ -279,7 +279,7 @@ Se recogen en el proceso 0 los resultados de la multiplicación de todos los pro
 Multiplicación de matrices
 
 ```{tip}
-- <a href="https://drive.google.com/drive/folders/1DefqxV-zYbB2pSy_Dpl5fbWD0TH3KDWF?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
+- <a href="https://drive.google.com/drive/folders/1xv7Tm4bgeDYSSflGIwJlUC1Dldtu8Biy?usp=sharing" target="_blank">Acceder a carpeta de archivos Python</a>
 
 - Ver el archivo de Python: `9-MultiplicaciónDeMatrices.py`
 
