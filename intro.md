@@ -178,7 +178,7 @@ Concurrencia para desarrollo web
 **Unidad 7 ⏳**
 ^^^
 
-Multiprocessing
+OpenMP
 :::
 
 :::{grid-item-card}
@@ -189,7 +189,7 @@ Multiprocessing
 **Unidad 8 ⚡️**
 ^^^
 
-Message Passing Interface (MPI)
+Multiprocessing
 :::
 
 :::{grid-item-card}
@@ -200,6 +200,17 @@ Message Passing Interface (MPI)
 **Unidad 9 🐆**
 ^^^
 
+Message Passing Interface (MPI)
+:::
+
+:::{grid-item-card}
+:link: Unidad10
+:link-type: doc
+:class-header: bg-light
+
+**Unidad 10 🔱**
+^^^
+
 Compute Unified Device Architecture (CUDA)
 :::
 
@@ -208,7 +219,7 @@ Compute Unified Device Architecture (CUDA)
 :link-type: doc
 :class-header: bg-light
 
-**Unidad 10 🧠**
+**Unidad 11 🧠**
 ^^^
 
 Inteligencia artificial (IA)
@@ -220,7 +231,7 @@ Inteligencia artificial (IA)
 
 ## Información del curso
 
-- Horarios de clases: martes (2pm a 4pm) y jueves (7am a 9:30am)
+- Horarios de clases: Miercoles (2pm a 4pm) y jueves (4pm a 6:30pm)
 - La **dedicación** de tiempo es la base para completar con éxito el curso
 
 
