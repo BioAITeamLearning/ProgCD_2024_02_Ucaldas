@@ -27,7 +27,7 @@ Python para programación concurrente y distribuida
 Explore this book {fas}`arrow-right`
 :::
 ::::
-<!--
+
 ## Quiz!!
 
 
@@ -37,20 +37,20 @@ Explore this book {fas}`arrow-right`
 :margin: 3
 :class-body: text-center
 :class-header: bg-light text-center
-:link: https://docs.google.com/forms/d/e/1FAIpQLSczlmkfTyxF6AlYtuHehiB00SL3Sz1jeMx-1ZMJhvXQMPWNrw/viewform?usp=sharing
+:link: https://forms.gle/2akMqket2cmeSVox8
 **💬 Quiz 1**
 ^^^
-```image} https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png
+```{image} https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png
 :height: 100
 ```
 
 Quiz 1: Repaso de Python
 ---
-Explore this book fas}`arrow-right`
+Explore this book {fas}`arrow-right`
 :::
 ::::
 
--->
+
 
 ```{note}
 Acá un recurso extra de la unidad: [Click Acá](https://docs.google.com/presentation/d/11FnBSrBIr6GFuoq9m2JWqjaT4-j6WWHP/edit?usp=sharing&ouid=100374191369911989354&rtpof=true&sd=true)
