@@ -370,13 +370,7 @@ La entrega debe anexarse al final de la entrega del Ejercicio de esta sección.
 
 ## Cálculo de Teraflops (TFlops)
 
-* "FLOPS" es una abreviatura de "Floating Point Operations Per Second", que se traduce como "Operaciones de Punto Flotante por Segundo".
-
-* Esta medida representa de manera integral la potencia de procesamiento y la eficiencia de una máquina.
-
-* En términos simples, cuanto mayor sea el número de teraflops, mejor será el rendimiento de la máquina.
-
-* Para calcular los teraflops de una máquina, es necesario conocer tres factores clave: la velocidad de reloj de la CPU, la cantidad de núcleos de la CPU y la precisión de punto flotante que se utiliza.
+Los **FLOPS** (Floating Point Operations Per Second) son una medida del rendimiento de una computadora, y te permiten evaluar la capacidad de procesamiento de operaciones de punto flotante. Para calcular los FLOPS teóricos de una computadora portátil, generalmente puedes seguir los siguientes pasos, dependiendo de los componentes principales de la misma, especialmente la CPU y la GPU:
 
 ```{dropdown} FLOPS en unidades
 
@@ -384,16 +378,29 @@ La entrega debe anexarse al final de la entrega del Ejercicio de esta sección.
 
 ```
 
+### 1. Identificar la arquitectura de la CPU/GPU
+
+Cada procesador tiene una arquitectura específica (por ejemplo, x86, ARM, etc.), lo que afecta la cantidad de operaciones que puede realizar en un ciclo de reloj.
+
+### 2. Conseguir el número de núcleos y la frecuencia del reloj (GHz)
+
+Debes conocer cuántos núcleos físicos y lógicos tiene el procesador, así como su frecuencia de reloj. Puedes obtener esta información con programas como **CPU-Z** o con herramientas integradas en el sistema operativo (por ejemplo, en Windows mediante el "Administrador de tareas").
+
+### 3. Determinar el número de operaciones por ciclo
+
+Para esto, necesitas saber cuántas operaciones de punto flotante puede realizar el procesador por ciclo de reloj en cada núcleo. Esto dependerá de la arquitectura del procesador y si soporta instrucciones vectoriales avanzadas como AVX o AVX-512.
+
+### 4. Calcular los teraflops
+
 $$
-\text{Tflops} = \frac{{\text{Velocidad de reloj de la CPU} \times \text{Número de núcleos de la CPU} \times \text{Cantidad de operaciones por ciclo de reloj} \times \text{Precisión de punto flotante}}}{{10^{12}}}
+\text{Tflops} = \frac{{\text{Frecuencia de reloj de la CPU} \times \text{Número de núcleos de la CPU} \times \text{Cantidad de operaciones por ciclo de reloj}}}{{10^{12}}}
 $$
 
 Donde:
 
-- $\text{Velocidad de reloj de la CPU}$: es la velocidad de reloj de la CPU en hertz (Hz).
+- $\text{Frecuencia de reloj de la CPU}$: es la Frecuencia de reloj de la CPU en hertz (Hz).
 - $\text{Número de núcleos de la CPU}$: es la cantidad de núcleos de procesamiento de la CPU.
 - $\text{Cantidad de operaciones por ciclo de reloj}$: es la cantidad de operaciones de punto flotante que se pueden realizar en cada ciclo de reloj.
-- $\text{Precisión de punto flotante}$: es la precisión de punto flotante que se utiliza, que puede ser de precisión simple (32 bits) o doble precisión (64 bits).
 - $10^{12}$: es un factor de escala para convertir los resultados a teraflops.
 
 ```{note}
@@ -405,7 +412,7 @@ Si una máquina tiene una velocidad de reloj de 3.5 GHz, 16 núcleos de procesam
 
 ```{dropdown} Solución Ejemplo 1
 
-TFLOPS = (3.5x10^9 x 16 x 2 x 64 bits) / 10^12 = 7.168 TFLOPS
+TFLOPS = (3.5x10^9 x 16 x 2 ) / 10^12 = 0.112 TFLOPS
 
 ```
 
@@ -420,10 +427,105 @@ Tres dispositivos tienen la misma frecuencia de reloj (2 GHz) y 4 núcleos de pr
 
 ```{dropdown} Solución Ejemplo 2
 
-- Celular 2 GHz * 4 núcleos * 4 operaciones por ciclo * 64bits  = 2.048 TFlops
+- Celular 2 GHz * 4 núcleos * 4/2 operaciones por ciclo = 0.016 TFlops
 
-- Xbox 2 GHz * 4 núcleos * 6 operaciones por ciclo * 32 bits = 1.536 TFlops
+- Xbox 2 GHz * 4 núcleos * 6 operaciones por ciclo = 0.048 TFlops
 
-- Computador 2 GHz * 4 núcleos * 8 operaciones por ciclo * 64 bits = 4.096 Tflops
+- Computador 2 GHz * 4 núcleos * 8/2 operaciones por ciclo = 0.032 Tflops
 
 ```
+
+## Cálculo de Teraflops en mi PC
+
+Vamos a calcular teóricamente los teraflops de una computadora portatil, usemos como ejemplo la siguiente computadora:
+
+<a href="https://es.msi.com/Laptop/GS65-Stealth-Thin-8RF/Specification" target="_blank">Computador portátil MSI GS65 Stealth Thin 8RF </a>
+
+Para calcular los FLOPS de la **MSI GS65 Stealth Thin 8RF**, necesitamos considerar tanto la CPU como la GPU.
+
+### CPU (Intel Core i7-8750H)
+
+La laptop utiliza un procesador **Intel Core i7-8750H** que tiene 6 núcleos y 12 hilos, con una frecuencia base de 2.2 GHz y un turbo de hasta 4.1 GHz. Este procesador es capaz de realizar varias operaciones de punto flotante por ciclo, gracias a tecnologías como **AVX**.
+
+Usaremos la frecuencia turbo de 4.1 GHz para el cálculo:
+
+* **Núcleos**: 6
+* **Frecuencia**: 4.1 GHz (4.1 x 10⁹ Hz)
+* **Operaciones por ciclo (AVX2)**: Suponemos 16 operaciones de punto flotante por ciclo por núcleo, basándonos en las instrucciones AVX2.
+
+Cálculo:
+
+```
+FLOPS_CPU = 6 núcleos × 4.1 × 10^9 Hz × 16 operaciones por ciclo = 393.6 GFLOPS
+``` 
+
+### GPU (NVIDIA GTX 1070 Max-Q)
+
+La **GTX 1070 Max-Q** es capaz de ofrecer hasta 6.5 teraflops de rendimiento en operaciones de punto flotante simples (FP32). Esta GPU tiene 2048 núcleos CUDA funcionando a una frecuencia de hasta 1468 MHz en modo boost.
+
+```
+FLOPS_GPU = 6.5 TFLOPS = 6500 GFLOPS
+```
+
+### Total FLOPS estimados (CPU + GPU):
+
+* **CPU**: 393.6 GFLOPS
+* **GPU**: 6500 GFLOPS
+* **Total**: Aproximadamente **6893.6 GFLOPS** (6.9 TFLOPS).
+
+Este cálculo da una estimación teórica del rendimiento de la laptop en operaciones de punto flotante, tomando en cuenta tanto la CPU como la GPU.
+
+## ¿Realmente está bien calculado?
+
+Los cálculos de **FLOPS** generalmente se refieren a la cantidad de **operaciones de punto flotante** por segundo en una arquitectura de 32 bits (FP32) o 64 bits (FP64), dependiendo del tipo de cálculo que se esté realizando.
+
+1. **FLOPS de CPU**:
+   • En el caso de la **Intel Core i7-8750H**, las operaciones de punto flotante suelen realizarse en **64 bits (FP64)** cuando se utilizan instrucciones estándar. Sin embargo, si la CPU usa instrucciones vectoriales como **AVX** o **AVX2**, estas pueden operar con datos de 32 bits (FP32), lo que duplica la cantidad de operaciones de punto flotante por ciclo.
+
+2. **FLOPS de GPU**:
+   • La **GTX 1070 Max-Q** está optimizada para operaciones de 32 bits (**FP32**), que es el estándar en las GPUs para cálculos en gráficos y muchos cálculos científicos. Aunque las GPUs también pueden realizar operaciones de 64 bits (**FP64**), su rendimiento es significativamente menor en comparación con las operaciones FP32.
+
+En Conclusión:
+
+• **Los cálculos que hicimos se basan en operaciones de 32 bits (FP32)**, ya que tanto la GPU como las instrucciones AVX de la CPU tienden a realizar más operaciones de este tipo. Si estuviéramos calculando FLOPS para operaciones de 64 bits (FP64), el rendimiento sería menor, especialmente en la GPU.
+
+Vamos a realizar los cálculos tanto para operaciones de punto flotante en 32 bits (**FP32**) como para 64 bits (**FP64**) en el procesador y la GPU de la **MSI GS65 Stealth Thin 8RF**.
+
+**CPU: Intel Core i7-8750H**
+
+Cálculo para FP32 (32 bits):
+* **Núcleos**: 6
+* **Frecuencia turbo**: 4.1 GHz = 4.1 x 10⁹ Hz
+* **Operaciones por ciclo (AVX2)**: 16 operaciones FP32 por ciclo por núcleo.
+
+```
+FLOPS_CPU-FP32 = 6 núcleos × 4.1 × 10^9 Hz × 16 operaciones por ciclo = 393.6 GFLOPS
+```
+
+Cálculo para FP64 (64 bits):
+* **Operaciones por ciclo (AVX2 en FP64)**: Por cada operación de 64 bits, se realizan la mitad de operaciones que en 32 bits, es decir, **8 operaciones por ciclo**.
+
+```
+FLOPS_CPU-FP64 = 6 núcleos × 4.1 × 10^9 Hz × 8 operaciones por ciclo = 196.8 GFLOPS
+```
+
+**GPU: NVIDIA GTX 1070 Max-Q**
+
+Cálculo para FP32 (32 bits):
+* **Rendimiento máximo**: 6.5 TFLOPS (6500 GFLOPS) en operaciones de 32 bits (**FP32**).
+
+Cálculo para FP64 (64 bits):
+La mayoría de las GPUs orientadas a gráficos, como la GTX 1070 Max-Q, tienen un rendimiento mucho menor en FP64. El ratio típico para esta tarjeta es de **1/32** del rendimiento de FP32. Por lo tanto:
+
+```
+FLOPS_GPU-FP64 = 6500 / 32 = 203.125 GFLOPS
+```
+
+**Resumen de los resultados**
+
+| Tipo de operación | CPU (GFLOPS) | GPU (GFLOPS) | Total (GFLOPS) |
+|-------------------|--------------|--------------|----------------|
+| FP32 (32 bits)    | 393.6        | 6500         | 6893.6         |
+| FP64 (64 bits)    | 196.8        | 203.125      | 399.925        |
+
+De esta forma, el rendimiento máximo teórico en operaciones de punto flotante de 32 bits (FP32) es aproximadamente **6893.6 GFLOPS**, mientras que para operaciones de 64 bits (FP64) sería de **399.925 GFLOPS**.
