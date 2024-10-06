@@ -427,11 +427,11 @@ Tres dispositivos tienen la misma frecuencia de reloj (2 GHz) y 4 núcleos de pr
 
 ```{dropdown} Solución Ejemplo 2
 
-- Celular 2 GHz * 4 núcleos * 4/2 operaciones por ciclo = 0.016 TFlops
+# - Celular [2 GHz * 4 núcleos * (4*2 operaciones por ciclo)]/ (10^12) = 0.064 TFlops
 
-- Xbox 2 GHz * 4 núcleos * 6 operaciones por ciclo = 0.048 TFlops
+- Xbox [2 GHz * 4 núcleos * 6 operaciones por ciclo]/ (10^12) = 0.048 TFlops
 
-- Computador 2 GHz * 4 núcleos * 8/2 operaciones por ciclo = 0.032 Tflops
+- Computador [2 GHz * 4 núcleos * (8*2 operaciones por ciclo)]/ (10^12) = 0.128 Tflops
 
 ```
 
