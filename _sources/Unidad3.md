@@ -564,4 +564,4 @@ FLOPS (FP64) = 2,048 núcleos × 1.215 GHz × 2/32 operaciones por ciclo
 | FP32 (32 bits)    | 393.6        | 4,976.64         | 5370.24         |
 | FP64 (64 bits)    | 196.8        | 155.52      | 352.32        |
 
-De esta forma, el rendimiento máximo teórico en operaciones de punto flotante de 32 bits (FP32) es aproximadamente **8585.6 GFLOPS**, mientras que para operaciones de 64 bits (FP64) sería de **352.32 GFLOPS**.
+De esta forma, el rendimiento máximo teórico en operaciones de punto flotante de 32 bits (FP32) es aproximadamente **5370.24 GFLOPS**, mientras que para operaciones de 64 bits (FP64) sería de **352.32 GFLOPS**.
