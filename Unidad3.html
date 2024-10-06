@@ -932,8 +932,8 @@ s = f + N(1 - f) = N - (N - 1)f
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Solución Ejemplo 2</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<h1 class="rubric" id="celular-2-ghz-4-nucleos-4-2-operaciones-por-ciclo-10-12-0-064-tflops">- Celular [2 GHz * 4 núcleos * (4*2 operaciones por ciclo)]/ (10^12) = 0.064 TFlops</h1>
 <ul class="simple">
+<li><p class="sd-card-text">Celular [2 GHz * 4 núcleos * (4*2 operaciones por ciclo)]/ (10^12) = 0.064 TFlops</p></li>
 <li><p class="sd-card-text">Xbox [2 GHz * 4 núcleos * 6 operaciones por ciclo]/ (10^12) = 0.048 TFlops</p></li>
 <li><p class="sd-card-text">Computador [2 GHz * 4 núcleos * (8*2 operaciones por ciclo)]/ (10^12) = 0.128 Tflops</p></li>
 </ul>
@@ -978,7 +978,7 @@ s = f + N(1 - f) = N - (N - 1)f
 </section>
 <section id="numero-de-nucleos">
 <h4>1. <strong>Número de núcleos</strong>:<a class="headerlink" href="#numero-de-nucleos" title="Link to this heading">#</a></h4>
-<p>Por ejemplo, una GPU NVIDIA GTX 1080 tiene <strong>2,560 CUDA cores</strong>.</p>
+<p>Por ejemplo, una GPU NVIDIA GTX 1070 tiene <strong>2,560 CUDA cores</strong>.</p>
 </section>
 <section id="frecuencia-del-nucleo">
 <h4>2. <strong>Frecuencia del núcleo</strong>:<a class="headerlink" href="#frecuencia-del-nucleo" title="Link to this heading">#</a></h4>
@@ -990,10 +990,10 @@ s = f + N(1 - f) = N - (N - 1)f
 </section>
 <section id="ejemplo-de-calculo-para-fp32">
 <h4>Ejemplo de cálculo para FP32:<a class="headerlink" href="#ejemplo-de-calculo-para-fp32" title="Link to this heading">#</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP32) = 2,560 núcleos × 1.6 GHz × 2 operaciones por ciclo
-= 2,560 × 1.6 × 2
-= 8,192 GFLOPS
-= 8.192 TFLOPS
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP32) = 2,048 núcleos × 1.215 GHz × 2 operaciones por ciclo
+= 2,048 × 1.215 × 2
+= 4,976.64 GFLOPS
+= 4.976 TFLOPS
 </pre></div>
 </div>
 </section>
@@ -1002,8 +1002,8 @@ s = f + N(1 - f) = N - (N - 1)f
 <h3>Total FLOPS estimados (CPU + GPU):<a class="headerlink" href="#total-flops-estimados-cpu-gpu" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>CPU</strong>: 393.6 GFLOPS</p></li>
-<li><p><strong>GPU</strong>: 8192 GFLOPS</p></li>
-<li><p><strong>Total</strong>: Aproximadamente <strong>8585.6 GFLOPS</strong> (8.58 TFLOPS).</p></li>
+<li><p><strong>GPU</strong>: 4976.64 GFLOPS</p></li>
+<li><p><strong>Total</strong>: Aproximadamente <strong>5370.24 GFLOPS</strong> (5.370 TFLOPS).</p></li>
 </ul>
 <p>Este cálculo da una estimación teórica del rendimiento de la laptop en operaciones de punto flotante, tomando en cuenta tanto la CPU como la GPU.</p>
 </section>
@@ -1039,18 +1039,18 @@ s = f + N(1 - f) = N - (N - 1)f
 </div>
 <p><strong>GPU: NVIDIA GTX 1070 Max-Q</strong></p>
 <p>Cálculo para FP32 (32 bits):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP32) = 2,560 núcleos × 1.6 GHz × 2 operaciones por ciclo
-= 2,560 × 1.6 × 2
-= 8,192 GFLOPS
-= 8.192 TFLOPS
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP32) = 2,048 núcleos × 1.215 GHz × 2 operaciones por ciclo
+= 2,048 × 1.215 × 2
+= 4,976.64 GFLOPS
+= 4.976 TFLOPS
 </pre></div>
 </div>
 <p>Cálculo para FP64 (64 bits):
 La mayoría de las GPUs orientadas a gráficos, como la GTX 1070 Max-Q, tienen un rendimiento mucho menor en FP64. El ratio típico para esta tarjeta es de <strong>1/32</strong> del rendimiento de FP32. Por lo tanto:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP64) = 2,560 núcleos × 1.6 GHz × 2/32 operaciones por ciclo
-= 2,560 × 1.6 × 0.0625
-= 256 GFLOPS
-= 0.256 TFLOPS
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>FLOPS (FP64) = 2,048 núcleos × 1.215 GHz × 2/32 operaciones por ciclo
+= 2,048 × 1.215 × 0.0625
+= 155.52 GFLOPS
+= 0.155 TFLOPS
 </pre></div>
 </div>
 <p><strong>Resumen de los resultados</strong></p>
@@ -1065,18 +1065,18 @@ La mayoría de las GPUs orientadas a gráficos, como la GTX 1070 Max-Q, tienen u
 <tbody>
 <tr class="row-even"><td><p>FP32 (32 bits)</p></td>
 <td><p>393.6</p></td>
-<td><p>8192</p></td>
-<td><p>8585.6</p></td>
+<td><p>4,976.64</p></td>
+<td><p>5370.24</p></td>
 </tr>
 <tr class="row-odd"><td><p>FP64 (64 bits)</p></td>
 <td><p>196.8</p></td>
-<td><p>256</p></td>
-<td><p>452.8</p></td>
+<td><p>155.52</p></td>
+<td><p>352.32</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>De esta forma, el rendimiento máximo teórico en operaciones de punto flotante de 32 bits (FP32) es aproximadamente <strong>8585.6 GFLOPS</strong>, mientras que para operaciones de 64 bits (FP64) sería de <strong>452.8 GFLOPS</strong>.</p>
+<p>De esta forma, el rendimiento máximo teórico en operaciones de punto flotante de 32 bits (FP32) es aproximadamente <strong>8585.6 GFLOPS</strong>, mientras que para operaciones de 64 bits (FP64) sería de <strong>352.32 GFLOPS</strong>.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
