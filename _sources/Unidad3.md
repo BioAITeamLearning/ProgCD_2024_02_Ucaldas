@@ -477,10 +477,10 @@ FLOPS = Número de núcleos × Frecuencia del núcleo (en GHz) × Operaciones po
 #### Cálculo paso a paso:
 
 #### 1. **Número de núcleos**:
-Por ejemplo, una GPU NVIDIA GTX 1070 tiene **2,560 CUDA cores**.
+Por ejemplo, una GPU NVIDIA GTX 1070 tiene **2,048 CUDA cores**.
 
 #### 2. **Frecuencia del núcleo**:
-Supongamos que la GPU tiene una **frecuencia de 1.6 GHz**.
+Supongamos que la GPU tiene una **frecuencia de 1.215 GHz**.
 
 #### 3. **Operaciones por ciclo**:
 En el caso de operaciones de punto flotante de 32 bits (FP32), cada núcleo puede realizar **dos operaciones de punto flotante por ciclo**.
